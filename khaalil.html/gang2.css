@@ -1,0 +1,87 @@
+/*ta3 css 2*/
+
+
+/*div {*/
+
+
+/*   color: aqua;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow: hidden;*/
+
+
+/*y5aber lktiba ezayda 3la div */
+
+
+/*  overflow: scroll;*/
+
+
+/*scroll lktiba tkon da5l div*/
+
+
+/*   overflow: auto;*/
+
+
+/*ida fatt lktiba div drlk scroll*/
+
+
+/*   overflow-x: hidden;*/
+
+
+/*t haidy b l3ard (sroll b tool)w y b toll
+    bla matdir scroll b toul wl 3ard*/
+
+
+/*}*/
+
+div {
+    background-color: rgba(255, 255, 255, 0.223);
+    color: rgb(0, 26, 255);
+    text-shadow: 0 25 25 red;
+    /*shadow howa edlila < fih 
+    h-shadow v-shadow blur(ram9 wla fath)  color*/
+    text-align: center;
+    /*t positioner le txt ta3k*/
+    direction: ltr;
+    /*ltr left to right 
+    kin ndiro rtl tji l3kss w ndiroha 
+    f l3arbiya*/
+    vertical-align: auto;
+    /*lktiba m3a etaswira kifach yjo ida fo9 wla tht*/
+    text-decoration: overline;
+    /*str lfo9
+    non bach tnahi mn link la ligne*/
+    text-transform: capitalize;
+    /*kol awl kelma b capitale
+    uppercase (ga3 la phrase capitale)*/
+    letter-spacing: 25px;
+    /*letter spacing l vide mabin kelmat*/
+    text-indent: 25px;
+    /* l vide 9ble matbda la pharase*/
+    line-height: 1.6;
+    /*l vide mabine les phrase*/
+    word-spacing: 5px;
+    /*l vide da5l l kelma*/
+    width: 200px;
+    white-space: nowrap;
+    /*ki dirha normale ki y5lass widht t3awd tbda mn lwl nowrap l3kss*/
+    word-break: break-all;
+    /*ll kelma hada(ydiroh ll lien) break word ll kelma*/
+    text-overflow: ellipsis;
+    /*bach ya3rf bli txt ma5lassch tji m3a over flow hidden*/
+    border-color: brown;
+    font-family: 'Segoe UI', Tahoma, "Geneva", Verdana, sans-serif;
+    /*fl font lazm tdir ll lien*/
+}
+
+div p {
+    border-color: inherit;
+    /*bla mat3awd ydi l color ta3 div yli da5l fih*/
+}
+
+div:hover {
+    overflow: visible;
+    /*ki yjoz 3liha tban l overflow*/
+}

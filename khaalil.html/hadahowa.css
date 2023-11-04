@@ -1,0 +1,268 @@
+/*ta3 css 1*/
+
+p {
+    color: rgb(202, 112, 112);
+    font-size: large;
+    background-color: rgb(220, 38, 38);
+}
+
+
+/*ki ndiro class f html ndiro . f css
+ w d id hachtage */
+
+.hoho {
+    color: rgb(255, 127, 234);
+}
+
+
+/*illigne style 3ando l awlawiya f css*/
+
+
+/*l id man9droch nbdawh b numero
+*/
+
+
+/*div */
+
+
+/*{*/
+
+
+/*background-color: red;*/
+
+
+/*name color*/
+
+
+/*background-color: rgb( 0 255 0 /50%);*/
+
+
+/* red green blue w t5ayr chhal ham9*/
+
+
+/*background-color: #ff0000;*/
+
+
+/*t5admo b l exa w kol zouj nwamr hiya colour*/
+
+
+/*background-repeat: no-repeat;*/
+
+
+/*la photo tt3awd
+dir repeat x tt3awd 3amodi w repeat y ofo9i*/
+
+
+/*background-image: url("download - Copy.jpg");
+background-attachment: scroll;*/
+
+
+/*fixed tthark etasswira w scroll mattharkch ki tl3w thabt*/
+
+
+/*background-position: center right;*/
+
+
+/* t positioner la photo
+top l fo9 w center f wasst w buttom taht ga3 */
+
+
+/*left yousra right womna center f l wsst */
+
+
+/*background-position: 0% 25%;*/
+
+
+/* la prmier position hiya l youssra w lo5ra mn lfo9
+ndiroha b % wla b px*/
+
+
+/*
+background-size: auto;
+background-size: cover;
+background-size: 200px 200px;*/
+
+
+/*background size ndiro biha la taille ta3 photo
+ cover y3amr la paje kaml
+ contain kima cover mais la taille ta3 ttbdl 3la hssab la page
+ wla t9dr tdir b px wla %*/
+
+
+/*}*/
+
+h1 {
+    background-color: #ff00dd;
+    /*top right bottom left*/
+    /* padding: 10px; */
+    /*top right bottom left*/
+    /*10 20 10 20*/
+    /* padding: 10px 20px; */
+    /*top right bottom left*/
+    /* 10px 20 15  20*/
+    /* padding: 10px 20px 15px;*/
+    /*ki tkon vid ydi yli m9abltha*/
+    /*padding mn taht t9dr  t utuliser right ledt bottm top*/
+    padding: 10%;
+    margin: 50px;
+    margin-left: 50px;
+    /*margin mn da5l w padding mn bra*/
+    /*f padding positive mais margine n9dro ndiro b - */
+    /*ki tdir left m3anaha l right tanik*/
+    margin-left: auto;
+    margin-right: auto;
+    /*auto ma3naha left kima right*/
+    width: 20px;
+    border-width: 25px;
+    border-color: blue;
+    border-color: aqua rebeccapurple;
+    border-style: solid dashed;
+    /*bach ndiro border lazmlo width w color w style */
+    border: rgb(0, 85, 255) solid 10px;
+    /*hda el mo5tasser*/
+}
+
+h2 {
+    width: 300px;
+    padding: auto;
+    /*ga3 les cotte kifkif*/
+    padding: 10px;
+    border: #00ff48 10px solid;
+    outline: #ff00dd 10px solid;
+    /*outline hiya border mn bra*/
+}
+
+
+/*
+ block
+ take full widht ydih kaml
+ add line break kolwahda f str
+ respect margin widht padding
+ matjih hajja 9dam khtha
+ 
+ 
+inline 
+ do not line break tji wahda 9odam khotha
+ do not respect weidht hight 
+ padding w margine y respectih f left w right 
+ wjo des elme 9odam ba3dahom
+ bach nraj3oh block ndiro display block
+ 
+ inline block
+ y9dro yjo des elment ba3do
+  respect margin widht padding
+  
+ */
+
+
+/*div*/
+
+
+/*{*/
+
+
+/* background-color: rgb(138, 138, 135);
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    display: inline;
+    width: 400px;*/
+
+
+/*ykon mblocker maykbrch ki tzid ktiba */
+
+
+/*  min-width: 400px;*/
+
+
+/*l min widht div ta3k ykbr mn 400 w roh*/
+
+
+/*   max-width: 400px;*/
+
+
+/*l max mayfotoch la taille*/
+
+
+/*ki tdir min wl max f 3la 5atra rak thadd majal ta3 la taille yktb fih 
+    lbnadm*/
+
+
+/*nfss lklam benasba ll height*/
+
+
+/*width: fit-content;*/
+
+
+/*la taille ta3 div 3la hssab lklam*/
+
+
+/*}*/
+
+
+/*span {
+    background-color: aquamarine;
+    padding: 15px;
+}*/
+
+span {
+    background-color: rgb(138, 138, 135);
+    padding: 20px;
+    display: inline-block;
+}
+
+h3 {
+    background-color: rgb(127, 251, 255);
+    margin: 10px 0;
+    display: none;
+    /*none t5aby l elment*/
+    visibility: visible;
+    /* visible ma3naaha yban
+    hidden t5abih w t gardder plasto */
+}
+
+.moh {
+    display: none;
+    /*f display none elment yli morah ydi plact lwlani
+    mais f visibilite plassto tb9a vide*/
+}
+
+.one {
+    border-bottom: 2px solid red;
+    color: #00ff48;
+    background-color: #eeeeee4f;
+}
+
+.two {
+    border-bottom: 2px solid red;
+    color: #ffdd00;
+    background-color: #eeeeee4f;
+}
+
+.three {
+    border-bottom: 2px solid red;
+    color: #00b7ff;
+    background-color: #eeeeee4f;
+}
+
+.four {
+    border-bottom: 2px solid red;
+    color: #3300ff;
+    background-color: #eeeeee4f;
+}
+
+.one,
+.two,
+.three,
+.four {
+    padding: 10px;
+    margin: 10px 0;
+    /*l3anassr el mouchtaraka nlmohom haka w thab tzid p wla ay haja*/
+}
+
+.lol h4 {
+    /*bach nd5ol ll h4 n selectionih bach ndirlo css
+    nktb div h4 mais ki ndir h4 kol h4 yjiha css*/
+    background-color: #ac16704f;
+}

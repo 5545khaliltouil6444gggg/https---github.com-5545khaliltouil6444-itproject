@@ -1,0 +1,1597 @@
+//test1
+// Assign 2
+/*
+document.write("<h1>Elzero</h1>");
+document.querySelector("h1").style.color = 'blue';
+document.querySelector("h1").style.fontSize = '80px';
+document.querySelector("h1").style.fontWeight = 'bold';
+document.querySelector("h1").style.textAlign = 'center';
+document.querySelector("h1").style.fontFamily = 'arial';
+
+// Assign 3
+console.log("%cElzero %cWeb %cSchool", "color: red; font-size: 40px", "color: green; font-size: 40px; font-weight: bold;", "color: white; font-size: 40px; background-color: blue");
+
+// Assign 4
+console.group("Group 1");
+console.log("Message One");
+console.log("Message Two");
+console.group("Child Group");
+console.log("Message One");
+console.log("Message Two");
+console.group("Grand Child Group");
+console.log("Message One");
+console.log("Message Two");
+console.groupEnd();
+console.groupEnd();
+console.groupEnd();
+console.group("Group 2");
+console.log("Message One");
+console.log("Message Two");
+console.groupEnd();
+
+
+// Assign 5
+
+console.table(["Elzero", "Mostafa", "Alaa", "Ahmed", "Selim"]);
+
+// Assign 6
+// console.log("Iam In Console");
+// document.write("Iam In Page");
+/* console.log("Iam In Console");
+document.write("Iam In Page"); */
+
+
+/*
+===
+=== === === === === === === === === === === === === = ==
+Variables And Concatenation Challenge ==
+    ===
+    === === === === === === === === === === === === === =
+
+    [1] Create 3 Variables[Title, Desctiption, Date]
+    --All In One Statement
+    --Variable Name Must Be Two Words
+    --Title Content Is "Elzero"
+    --Description Content Is "Elzero Web School"
+    --Date Content Is "25/10" [2] Create Variable Contains Div And This Div Contains
+    --H3 For Title
+    --P For Paragraph
+    --Span For Time[3] Add This Card To Page 4 Times[4] Use Template Literals For Concatenate
+
+Extra
+    -
+    Use ES6 Repeat*/
+/*
+let The_title = "el zero",
+    The_descreption = "Elzero Web School",
+    The_date = "25/10";
+let nigger = `
+    <h1>${The_title}</h1>
+    <div class="description">
+    <p>${The_descreption}</p>
+    <p>${The_date}</p>
+    
+    
+    
+    </div>
+  `;
+document.write(nigger);
+
+//test2
+
+let hoho = 10,
+    momo = 20;
+console.log(hoho + "" + momo);
+console.log(typeof(hoho + "" + momo));
+console.log(`${hoho}${momo}`);
+console.log(typeof(`${hoho}${momo}`));
+console.log(hoho + "\n" + momo);
+console.log(`${hoho}
+${momo}`);
+
+
+
+console.log(`I'm In
+\\
+Love \\\\\\\\ """ '''
+++ With ++
+\\"""\\"""
+""JavaScript""\`\``);
+console.log(`\\\\\\`);
+console.log(" `I'm In \n \\\\ \n love \\\\ \"\"\" ' ' ' \n ++ With ++ \n \\ \"\"\"\\\"\"\" \n \"\"JavaScript\"\"``");
+
+
+let a = 21;
+let b = 20;
+
+console.log(a + "_" + b); // _21_2021_2021_2021_20_
+
+
+
+let num = 3;
+
+// Solution One
+console.log(num + num); // 6
+
+// Solution Two
+console.log(num * --num); // 6
+
+// Soultion Three
+console.log(true * 3 + ++num); // 6
+
+// Soultion Four
+console.log(num * --num); // 6
+console.log(num)
+    // Solution Five
+console.log((++num * ++num) / (true + true));
+// Solution Six
+
+//--num ytahsbb
+
+
+console.log("hoho");
+
+
+
+let numm = "10";
+
+// Solution One
+console.log(+numm + +numm); // 20
+//+num t5rjlk 10
+// Solution Two
+console.log(++numm - --numm + --numm + ++numm);
+// t9dr tdirlo ++ normal
+// 20
+// Solution Three
+console.log((+numm * --numm / ++numm) + ++numm); // 20
+// Solution Four
+console.log(--numm + numm); // 20
+
+
+
+let points = 10;
+
+// Write Your Code Here
+
+console.log(points); // 13
+
+// Write Your Code Here
+
+console.log(points); // 8;
+
+
+
+
+
+// Examples
+//console.log(100 _000); // 100000
+console.log(100000); // 100000
+console.log(5e4 + 5e4); // 100000
+
+// Your Solutions
+console.log(50000 + 50000); // 100000
+console.log(10 ** 5); // 100000
+console.log(+"100000"); // 100000
+console.log(1e5); // 100000
+console.log(Number("100000")); // 100000
+
+console.log(Math.pow(10, 5)); // 100000
+console.log(Math.round(99999.8));
+// 100000
+console.log(Math.trunc(100000.9)); // 100000
+console.log(Math.ceil(99999.8)); // 100000
+console.log(Math.floor(100000.1));;
+console.log(Number(100000.4.toFixed(0)));
+// matraj3 walo mor el fassila
+console.log(Math.round(parseFloat("100000.400 Mostafa")));
+console.log(Number.MAX_SAFE_INTEGER);
+
+
+
+
+let myVar = "100.56789 Views";
+
+console.log(Number(parseFloat(myVar).toFixed(2)));
+console.log(typeof(Number(parseFloat(myVar).toFixed(2))));
+
+console.log(parseInt(myVar));
+console.log(typeof(parseInt("100.56789 Views"))); // 5 et 3
+
+
+
+let flt = 10.4;
+
+console.log(Math.round(flt)); // 10
+console.log(Math.floor(flt));
+// 10
+console.log(Math.trunc(flt)); // 10
+console.log(flt.toFixed(0)); // 10
+console.log(parseInt(flt)); // 10
+
+
+
+const randomNum = Math.floor(Math.random() * 5);
+console.log(randomNum);
+// 0 || 1 || 2 || 3 || 4
+
+// 3add ar9am
+console.log(`${Number.MAX_SAFE_INTEGER}`.length);*/
+
+
+
+/*
+  Challenge 1
+*/
+/*
+let aa = 10;
+let bb = "20";
+let cc = 80;
+// a=11
+
+console.log(++aa + +bb++ + +cc++ - +aa++);*/
+// 11! + 20 + 81 - 12
+//console.log(++aa + -bb + +cc++ - -aa++ + +aa);
+//console.log(--cc + +bb + --aa * +bb++ - +bb * aa + --aa - +true);
+
+/*
+  [++a] [+]
+  [++a]
+  - Value:
+  - Explain:
+  [+]
+  - Explain:
+*/
+
+/*
+  Challenge 2
+*/
+/*
+let dd = "-100";
+let e = "20";
+let f = 30;
+let gg = true;
+
+// Only Use Variables Value
+// Do Not Use Variable Twice
+
+console.log(-dd * +e); // 2000
+console.log((-dd * true) * (f - +e) + (-dd) * (f - +e - true - true - true) + (f + true + true + true)); // 1733
+
+
+
+
+
+
+
+
+
+let userName = "Elzero";
+console.log(userName[3]); // e
+console.log(userName.charAt(3)); // e
+console.log(userName.slice(3, 4));
+// 0 1 
+console.log(userName.slice(-3, -2)); // -1 0 
+console.log(userName.substring(3, 4));; // e
+console.log((userName.charAt(3)).repeat(3)); // eee
+
+
+
+
+
+
+
+let word = "Elzero";
+let letterZ = "z";
+let letterE = "e";
+let letterO = "O";
+
+console.log(word.includes(letterZ));
+// True
+console.log(letterE.toLowerCase())
+console.log(word.startsWith(letterE.toUpperCase()));
+// True
+console.log(word.endsWith(letterO.toLowerCase())); // True
+
+
+
+
+
+
+/*
+  String Challenge
+  All Solutions Must Be In One Chain
+  You Can Use Concatenate
+*/
+/*
+let aaaaaaaaaaa = "Elzero Web School";
+
+// Include This Method In Your Solution [slice, charAt]
+console.log(aaaaaaaaaaa.charAt(2).toUpperCase() + aaaaaaaaaaa.slice(3, 6)); // Zero
+
+// 8 H
+console.log(aaaaaaaaaaa.charAt(13).toUpperCase().repeat(8)); // HHHHHHHH
+
+// Return Array
+console.log(aaaaaaaaaaa.slice(0, 6)); // ["Elzero"]
+
+// Use Only "substr" Method + Template Literals In Your Solution
+console.log(aaaaaaaaaaa.substr(0, 6) + " " + aaaaaaaaaaa.substr(11, 17)); // Elzero School
+
+// Solution Must Be Dynamic Because String May Changes
+console.log(aaaaaaaaaaa.charAt(0).toLowerCase() + aaaaaaaaaaa.slice(1, aaaaaaaaaaa.length - 1).toUpperCase() + aaaaaaaaaaa.charAt(aaaaaaaaaaa.length - 1).toLowerCase()); // eLZERO WEB SCHOOl
+
+
+
+
+
+console.log(100 == "100"); // true
+console.log(100 != 1000); // true
+console.log(110 != 100 != 10 != 20); // true
+console.log(-10 == "-10"); // true
+console.log(-50 != +"-40"); // true
+console.log(10 != -"-40"); // true
+console.log("10" == 10); // true
+console.log(20 != false); // true*/
+
+
+
+
+
+
+/*
+let num1 = 10;
+let num2 = 20;
+console.log("hr")
+console.log(num1 != num2); // true
+console.log(num1 !== num2); // true
+console.log(num1 < num2); // true
+console.log(num1 <= num2); // true
+console.log(num1 <= num2 && num1 !== num2); // true
+console.log(num1 <= num2 || num1 !== num2); // true
+console.log(!(num1 == num2))
+
+
+let aaa = 20;
+let bbb = 30;
+let c = 10;
+console.log("hr")
+
+console.log(aaa < bbb && aaa > c || aaa == bbb); // true
+console.log(aaa != bbb >= aaa > c); // true
+console.log((aaa < bbb) && !(aaa > bbb) && (aaa > c) && (aaa > c)); // truea// Test Case 1
+
+
+
+
+
+
+
+
+//let nummm = 9; // "009"
+
+// Test Case 2
+//let nummm = 20; // "020"
+
+// Test Case 3
+//let nummm = 110; // "110"
+/*if (nummm < 10) { console.log("00" + nummm) } else if (nummm >= 10 && nummm < 100) { console.log("0" + nummm) } else {
+    console.log(nummm);
+}*/
+
+/*
+let numm1 = 9;
+let str = "9";
+let str2 = "20";
+
+// Output
+"{num1} Is The Same Value As {str}"
+"{num1} Is The Same Value As {str} But Not The Same Type"
+"{num1} Is Not The Same Value Or The Same Type As {str2}"
+"{str} Is The Same Type As {str2} But Not The Same Value"
+if (numm1 == str) {
+    console.log("{num1} Is The Same Value As {str}");
+}
+if (typeof numm1 != typeof str) {
+    console.log("{num1} Is The Same Value As {str}");
+}
+if (numm1 !== str2) { console.log("{num1} Is The Same Value As {str2}") }
+if (str != str2) { console.log("{str} Is The Same Value As {str2}") }
+
+
+
+
+
+/*
+let num10 = 10;
+let num20 = 30;
+let num30 = "30";
+
+// Needed Output
+"30 Is Larger Than 10 And Type string Not The Same Type As number"
+"30 Is Larger Than 10 And Value Is The Same As 30 And Type string Not The Same Type As number"
+"{num3} Value And Type Is Not The Same As {num1} And Type Is Not The Same As {num2}"
+//if ((num3 > num10 && num20 !== num10) && (num20 == num3) && (num20 !== num3) && (num20 == num3) && (num20 !== num3)) { console.log("hi") }
+
+
+
+// Edit What You Want Here
+
+let num100 = 22;
+let num200 = 10;
+let num300 = 22;
+let num4 = 55;
+*/
+/*
+  Do Not Edit Below This Line
+  Needed Output
+  True 7 Times
+*/
+
+// Condition 1
+/*
+if (num100 > num200) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+// Condition 2
+
+if (num100 > num200 && num100 < num4) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+// Condition 3
+
+if (num100 > num200 && num100 === num300) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+// Condition 4
+//32 23
+if ((num100 + num200) < num4) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+// Condition 5
+
+if ((num100 + num300) < num4) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+// Condition 6
+
+if ((num100 + num200 + num300) < num4) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+// Condition 7
+/*let num100 = 22;
+let num200 = 10;
+let num300 = 22;
+let num4 = 55;*/
+/*
+if (num4 - (num100 + num300) + num200 === 21) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+
+/*
+    let day = "   friday  ";
+    // You Need To Remove Spaces And Make First Letter Capital => Friday
+
+    let day = "Friday";
+    let day = "Saturday";
+    let day = "Sunday";
+    // Output => "No Appointments Available"
+
+    let day = "Monday";
+    let day = "Thursday";
+    // Output => "From 10:00 AM To 5:00 PM"
+
+    let day = "Tuesday";
+    // Output => "From 10:00 AM To 6:00 PM"
+
+    let day = "Wednesday";
+    // Output => "From 10:00 AM To 7:00 PM"
+
+    let day = "World";
+    // Output => "Its Not A Valid Day"
+}*/
+/*
+let day = "   friday  "
+day = day.trim()
+day = day.charAt(0).toUpperCase() + day.slice(1)
+
+console.log(day)
+switch (day) {
+    default: console.log("roh t9wad")
+    break;
+
+    case "Friday":
+            case "Saturday":
+            case "Sunday":
+            console.log("No Appointments Available")
+        break;
+
+    case "Monday":
+            case "Thursday":
+            console.log("From 10:00 AM To 5:00 PM")
+        break;
+
+    case "Tuesday":
+            console.log("From 10:00 AM To 6:00 PM")
+        break;
+
+    case "Wednesday":
+            console.log("From 10:00 AM To 7:00 PM")
+        break;
+
+}
+
+
+
+
+
+
+
+let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
+let nuem = 3;
+
+
+myFriends.length = nuem
+    // Method 1
+console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
+
+// Method 2
+myFriends.pop();
+console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
+
+
+
+
+let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+
+friends.length = --friends.length
+friends.shift()
+console.log(friends); // ["Eman", "Osama"]
+
+
+
+
+
+
+
+let arrOne = ["C", "D", "X"];
+let arrTwo = ["A", "B", "Z"];
+let finalArr = arrOne.concat(arrTwo);
+
+// Write One Single Line Of Code
+finalArr = finalArr.sort().reverse()
+console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+
+
+
+
+
+
+let website = "Go";
+let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
+
+console.log(words[website.length][0].slice(website.length).toUpperCase()); // ZEROO
+
+
+
+
+
+
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
+if (haystack.includes(needle) === true) { console.log("kayna") }
+
+
+if (haystack.indexOf(needle) !== -1) { console.log("kayna") }
+if (haystack.lastIndexOf(needle) !== -1) { console.log("kayna") }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = [];
+
+// Your Code Here
+
+console.log(allArrs); // fxy
+/*arr1.shift();
+arr1.shift();
+arr2.shift();
+arr2.shift();
+allArrs = arr1.concat(arr2);
+allArrs = allArrs.sort().join("").toLowerCase(); // fxy
+console.log(allArrs); // fxy*/
+
+
+
+
+/*
+allArrs = arr1.concat(arr2).sort().join("").slice(arr1.indexOf("C") + arr2.indexOf("Y")).toLowerCase();
+
+console.log(allArrs);
+
+
+
+
+
+let zero = 0;
+
+let counter = 3;
+
+let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
+
+// Write Code Here
+
+console.log(my); // ["Osama", "Elham", "Mazero", "Ahmed"];
+
+/*
+
+my.push("Mostafa");
+
+my = my.reverse();
+console.log(my); // ["Osama", "Elham", "Mazero", "Ahmed"];
+my = my.slice(counter);
+console.log(my);*/
+
+
+
+
+//console.log(my.slice(++zero, counter).reverse()); // ["Elham", "Mazero"]
+
+/*console.log(my[--counter].slice(zero, counter) + my[++zero].slice(counter)); // "Elzero"
+console.log(counter)*/
+//console.log(my[++zero].slice(- --counter)); // "rO"
+
+
+
+
+
+/*
+
+let start = 10;
+let end = 100;
+let exclude = 40;
+
+// Output
+10
+20
+30
+50
+60
+70
+80
+90
+100
+
+
+for (let i = start; i < end; i += start) { if (i != 40) { console.log(i); } }
+
+
+
+console.log("--------------------------------------------------------------")
+
+
+
+let starte = 10;
+let ende = 0;
+let stope = 3;
+
+// Output
+/*10
+09
+08
+07
+06
+05
+04
+03*/
+/*
+for (let ii = starte;; --ii) {
+    if (ii == stope) { console.log(`${0}${ii}`); break } else if (ii < 10) {
+        console.log("0" + Number(ii));
+    } else {
+        console.log(`${ii}`)
+    }
+}
+console.log(typeof(`${10}`))
+
+console.log("--------------------------------------------------------------")
+
+
+
+
+
+let starst = 1;
+let ends = 6;
+let breaker = 2;
+
+// Output
+/*1
+--2
+--4
+2
+--2
+--4
+3
+--2
+--4
+4
+--2
+--4
+5
+--2
+--4
+6
+--2
+--4*/
+
+
+
+/*
+for (let j = starst; j <= ends; j++) { console.log(`${j}
+${"--"}${breaker}
+${"--"}${breaker+breaker}`) }
+
+
+
+
+console.log("--------------------------------------------------------------")
+
+
+let index = 10;
+let jump = 2;
+
+for (;;) {
+    console.log(index);
+    if (index == jump + jump) {
+        break;
+    }
+
+    index = index - jump;
+}
+
+// Output
+10
+8
+6
+4
+
+
+
+
+
+
+let frieneds = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+let letter = "a";
+
+// Output
+"1 => Sayed"
+"2 => Eman"
+"3 => Mahmoud"
+"4 => Osama"
+"5 => Sameh"
+for (let g = letter.length - 1; g < frieneds.length; g++) {
+    if (frieneds[g][letter.length - 1].toLowerCase() === letter) { continue; } else { console.log(frieneds[g]) }
+}
+
+
+
+
+
+let steart = 0;
+let swappedName = "elZerO";
+let coco = ""
+for (let p = steart; p < swappedName.length; p++) {
+    if (swappedName[p] === swappedName[p].toUpperCase()) {
+        coco += swappedName[p].toLowerCase()
+    } else if (swappedName[p] === swappedName[p].toLowerCase()) {
+
+
+        coco += swappedName[p].toUpperCase()
+
+    }
+}
+console.log(coco);
+
+
+
+
+
+let startThree = 0;
+let swappedNamee = "elZerO";
+let result = "";
+
+for (let n = startThree; n < swappedNamee.length; n++) {
+    if (swappedNamee[n] === swappedNamee[n].toLowerCase()) {
+        result += swappedNamee[n].toUpperCase();
+    } else if (swappedNamee[n] === swappedNamee[n].toUpperCase()) {
+        result += swappedNamee[n].toLowerCase();
+    }
+}
+console.log(result);
+
+
+
+
+
+
+
+let setart = 0;
+let mix = [1, 2, 3, "A", "B", "C", 4];
+
+// Output
+2
+3
+4
+console.log(typeof(mix[1]))
+for (h = ++setart; h < mix.length; h++) {
+    if (typeof(mix[h]) === "number") { console.log(mix[h]) }
+
+
+
+
+
+
+}
+
+
+
+
+console.log("--------------------------------------------------------------")
+    /*let friendees = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+    let indeex = 0;
+    let counteer = 0;
+
+    // Output
+    "1 => Sayed"
+    "2 => Mahmoud"
+
+
+    while (counter < friendees.length) {
+        if (friendees[counteer][indeex] !== "A" && typeof(friendees[counteer]) === "string") { console.log(friendees[counteer]) }
+        ++counteer;
+    }*/
+/*
+let friendxs = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+let indexx = 0;
+let countexr = 0;
+
+while (index < friendxs.length) {
+    if (typeof friendxs[indexx] === "number" || friendxs[indexx].startsWith("A")) {
+        indexx++;
+        continue;
+    }
+    console.log(`"${++counter} => ${friendxs[index]}"`);
+    index++;
+
+}
+console.log("--------------------------------------------------------------")
+
+
+
+
+function sayHello(theNameee, theGender) {
+    if (theGender == "Male") { console.log(`Helllo Mr ${theNameee}`) } else if (theGender == "Female") { console.log(`Helllo Miss ${theNameee}`) } else { console.log(`Helllo  ${theNameee}`) }
+
+}
+
+// Needed Output
+sayHello("Osama", "Male"); // "Hello Mr Osama"
+sayHello("Eman", "Female"); // "Hello Miss Eman"
+sayHello("Sameh"); // "Hello Sameh"
+sayHello("Osama", "nigger");
+sayHello();
+
+
+console.log("--------------------------------------------------------------")
+
+
+
+function calculate(firstNum, secondNum, operation) {
+    if (operation === undefined && secondNum === undefined) { console.log("secondNum + firstNum") } else if (operation === undefined) { console.log(secondNum + firstNum) } else if (operation === "subtract") { console.log(secondNum - firstNum) } else if (operation === "multiply") { console.log(secondNum * firstNum) } else if (secondNum === undefined || firstNum === undefined) { console.log("roh t9awd") }
+}
+
+// Needed Output
+//calculate(20); // Second Number Not Found
+//calculate(20, 30); // 50
+calculate(20, 30, 'add'); // 50
+/*calculate(20, 30, 'subtract'); // -10
+calculate(20, 30, 'multiply'); // 600*/
+
+
+console.log("--------------------------------------------------------------")
+
+/*
+function ageInTime(theAge) {
+    if (theAge > 100 || theAge < 10) { console.log("roh t9awd") } else { console.log(` ${theAge*12}
+    ${theAge*365} 
+    ${theAge*8,784 }`) }
+}
+
+// Needed Output
+ageInTime(110); // Age Out Of Range
+ageInTime(38); // Months Example => 456 Months
+
+console.log("--------------------------------------------------------------")
+
+
+
+function checkxStatus(ax, bx, cx) {
+    let nxame;
+    let axge;
+    let sxtatus;
+    //typeof ax === "string" ? nxame = ax : typeof ax === "number" ? axge = ax : ax = sxtatus
+    //typeof bx === "string" ? nxame = bx : typeof bx === "number" ? axge = bx : bx = sxtatus
+    //typeof cx === "string" ? nxame = cx : typeof cx === "number" ? axge = cx : cx = sxtatus
+
+
+    typeof sxtatus === true ? console.log(`Hello ${nxame} , you age ${axge} You Are Available For Hire `) : console.log(`Hello ${nxame} , you age ${axge} You Are not Available For Hire `)
+
+
+
+
+}
+console.log("--------------------------------------------------------------")
+    // Needed Output
+checkxStatus("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+checkxStatus(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+checkxStatus(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+checkxStatus(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
+console.log("--------------------------------------------------------------")
+
+
+
+function createSelectBox(startYear, endYear) {
+    document.write(`<select>`)
+
+    for (let y = startYear; y < endYear; ++y) {
+
+        document.write(`<option value >${y}</option>`)
+
+
+
+    }
+    document.write(`</select>`)
+
+}
+createSelectBox(2000, 2021);
+
+
+let l = 1;
+
+function multiply(...numberss) {
+    for (let x = 0; x < numberss.length; x++) {
+        if (typeof numberss[x] === "number") {
+            if (Number.isInteger(numberss[x]) === false) { l = l * Math.trunc(numberss[x]) } else { l = l * numberss[x] }
+        }
+    }
+    console.log(l)
+    l = 1;
+}
+
+multiply(10, 20); // 200
+multiply("A", 10, 30); // 300
+multiply(100.5, 10, "B"); // 1000
+
+
+
+
+
+
+
+console.log("----------------------------------------------------------------------------")
+
+
+
+
+console.log("----------------------------------------------------------------------------")
+
+function getDetails(zName, zAge, zCountry) {
+    function namePattern() {
+        return `${zName.slice(0, zName.indexOf(" "))}${zName.slice(zName.indexOf(" ")+1,3).toUpperCase()}.,`
+
+        // Write Your Code Here
+        // Osama Mohamed => Osama M.
+        // Ahmed ali => Ahmed A.
+    }
+    namePattern();
+
+    function ageWithMessage() {
+        return ` Your Age Is ${parseInt(zAge)},`;
+        // Write Your Code Here
+        // 38 Is My Age => Your Age Is 38
+        // 32 Is The Age => Your Age Is 32
+    }
+    ageWithMessage();
+
+    function countryTwoLetters() {
+        return `You Live In ${zCountry.slice(0, 2).toUpperCase()}`
+            // Write Your Code Here
+            // Egypt => You Live In EG
+            // Syria => You Live In SY
+    }
+    countryTwoLetters();
+
+    function fullDetails() {
+        // Write Your Code Here
+        return `Hello ${namePattern()} ${ageWithMessage()} ${countryTwoLetters()}`;
+    }
+    return fullDetails(); // Do Not Edit This
+}
+
+
+console.log(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
+// Hello Osama M., Your Age Is 38, You Live In EG
+
+console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
+// Hello Ahmed A., Your Age Is 32, You Live In SY
+
+
+
+
+/*
+function itsMe() {
+    return `Iam A Normal Function`;
+}
+
+console.log(itsMe()); // Iam A Normal Function*/
+
+
+
+/*
+nn = () => "Iam A Normal Function"
+
+
+console.log(nn());
+
+
+function urlCreate(protocol, web, tld) {
+    return `${protocol}://www.${web}.${tld}`;
+}
+
+console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+
+
+
+
+urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`
+console.log(urlCreate("https", "elzero", "org"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log("--------------------------------------")
+
+function specialMix(...data) {
+    let check = 0;
+    var t = 0;
+    for (let i = 0; i < data.length; i++) {
+        if (typeof data[i] === "string") {
+            if (!isNaN(parseInt(data[i]))) {
+                t = t + parseInt(data[i]);
+                check = 1;
+            }
+        } else {
+            t = t + data[i];
+            check = 1;
+
+        }
+    }
+    if (check == 0) { t = "hhh" }
+    return t
+}
+specialMix();
+
+
+
+
+console.log(specialMix(10, 20, 30));
+
+console.log(specialMix("10Test", "Testing", "20Cool")); // 30
+console.log(specialMix("Testing", "10Testing", "40Cool")); // 50
+console.log(specialMix("Test", "Cool", "Test")); // All Is Strings
+
+console.log("-----------------------------------")
+let mixx = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
+let app = mixx
+    .map(function(element) { if (typeof element === "string") { return element } else { return `` } }).reduce(function(acc, current) {
+            return acc + current
+
+
+        },
+        ``)
+
+
+console.log(app);
+
+
+
+console.log("-----------------------------------")
+
+
+
+let myStringx = "EElllzzzzzzzeroo";
+
+// Elzero
+let niggerr = myStringx.split("").filter(function(Element, Index, Array) {
+
+
+    return Array[Index] !== Array[Index + 1]
+
+}).join("");
+console.log(niggerr)
+console.log("-----------------------------------")
+let myArray = ["E", "l", "z", ["e", "r"], "o"];
+
+// Elzero
+console.log("-----------------------------------")
+let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+
+// [-1, -10, 10, 20, -5, -3]
+let niggergotohell = numsAndStrings.filter(function(Element, Index, Array) { return typeof Element === "number" })
+    .map(function(Element, Index, Array) { return -Element })
+console.log(niggergotohell)
+
+
+
+
+
+
+let nums = [2, 12, 11, 5, 10, 1, 99];
+
+// 500
+
+console.log("-----------------------------------")
+
+
+let weshouldkillniggers = nums.reduce(function(Acc, Current) {
+    return Current % 2 !== 0 ? Acc += Current : Acc = Acc * Current;
+}, 1)
+console.log(weshouldkillniggers);
+
+console.log("-----------------------------------")
+let member = {
+    name: "Elzero",
+    age: 38,
+    country: "Egypt",
+
+    fullDetails: function() { return `My name${member.name} my age ${member.age} i live in ${member.country}` }
+}
+
+
+// Create Your Object Here
+
+console.log(member.name); // Elzero
+console.log(member.age); // 38
+console.log(member.country); // Egypt
+console.log(member.fullDetails());
+// My Name Is Elzero, My Age Is 38, I Live in Egypt
+
+
+console.log("-----------------------------------")
+
+
+
+
+
+// Method One
+// Create Your Object Here
+let objMethodOne = { property: "Method One" }
+console.log(objMethodOne.property); // "Method One"
+
+// Method Two
+// Create Your Object Here
+let objMethodTwo = new Object({ property: "Method One" })
+
+console.log(objMethodTwo.property); // "Method Two"
+
+// Method Three
+// Create Your Object Here
+let ccc = { property: "Method One" }
+objMethodThree = Object.create(ccc);
+
+console.log(objMethodThree.property); // "Method Three"
+
+// Method Four
+// Create Your Object Here
+let objMethodFour = Object.assign({})
+objMethodFour.property = "Method One"
+console.log(objMethodFour.property); // "Method Four"
+
+
+
+
+
+
+//let ax = 1;
+
+let threeNums = {
+    b: 2,
+    c: 3,
+    d: 4,
+};
+
+let twoNums = {
+    e: 5,
+    f: 6,
+};
+//let finalObject = Object.assign({}, { ax }, );
+// Create Your Object Here in One Line
+
+console.log(finalObject);
+
+/*
+  a: 1
+  b: 2
+  c: 3
+  d: 4
+  e: 5
+  f: 6
+*/
+
+// The Object To Work With
+/*
+let myFavGames = {
+    "Trinity Universe": {
+        publisher: "NIS America",
+        price: 40,
+    },
+    "Titan Quest": {
+        publisher: "THQ",
+        bestThree: {
+            one: "Immortal Throne",
+            two: "Ragnarök",
+            three: "Atlantis",
+        },
+        price: 50,
+    },
+    YS: {
+        publisher: "Falcom",
+        bestThree: {
+            one: "Oath in Felghana",
+            two: "Ark Of Napishtim",
+            three: "origin",
+        },
+        price: 40,
+    },
+};
+
+// Code One => How To Get Object Length ?
+let object = Object.assign({}, myFavGames);
+let objectLength = Object.keys(object).length;
+console.log(Object.keys(myFavGames)[1][1])
+console.log(objectLength)
+console.log("#".repeat(20));
+
+console.log(objectLength);
+for (let i = 0; i < objectLength; i++) {
+    console.log(`The Game Name Is${Object.keys(myFavGames)[i]} `);
+    console.log(`The Publisher Is ${myFavGames[Object.keys(myFavGames)[i]][ "publisher"]} `);
+    console.log(`The Price Is  ${object[Object.keys(myFavGames)[i]][ "price"]} `);
+}
+/*
+// Check If Nested Object Has Property (bestThree)
+if ( ? ? ? ? ? ? ? ) {
+    console.log("- Game Has Releases ");
+    console.log(`First => ???????`);
+    console.log(`Second => ???????`);
+    console.log(`Third => ???????`);
+}
+console.log("#".repeat(20));
+} * /
+
+// Ouput
+
+"The Game Name Is Trinity Universe"
+"The Publisher Is NIS America"
+"The Price Is 40"
+"####################"
+"The Game Name Is Titan Quest"
+"The Publisher Is THQ"
+"The Price Is 50"
+"- Game Has Releases"
+"First => Immortal Throne"
+"Second => Ragnarök"
+"Third => Atlantis"
+"####################"
+"The Game Name Is YS"
+"The Publisher Is Falcom"
+"The Price Is 40"
+"- Game Has Releases"
+"First => Oath in Felghana"
+"Second => Ark Of Napishtim"
+"Third => origin"
+"####################"*/
+/*
+console.log(10 + "Osama");
+let g = "100";
+let n = 20;
+let m = true;
+
+
+
+
+
+
+
+console.log("----------------------------------")
+    /*console.log(document.getElementsByTagName("div")[0]);
+    console.log(document.getElementById("elzero"));
+    console.log(document.getElementsByClassName("element")[0])
+    console.log(document.querySelector("div"));
+    console.log(document.querySelectorAll("div")[0]);
+    console.log(document.body.getElementsByTagName("div")[0]);
+    console.log(document.querySelector("#elzero"));
+    console.log(document.querySelector(".element"));
+    console.log(document.body.children[0]);
+    console.log(document.body.childNodes[0]);
+    console.log(document.body.firstChild);
+    console.log(document.body.firstElementChild);
+    console.log(document.querySelectorAll("[name = 'js']")[0]);
+    console.log(document.querySelector("[name = 'js']"));*/
+/*
+for (i = 0; i < 10; i++) {
+    console.log(document.querySelectorAll("div")[i]);
+    document.querySelectorAll("div")[i].setAttribute("src", "https://elzero.org/wp-content/themes/elzero/imgs/logo.png");
+    document.querySelectorAll("div")[i].setAttribute("alt", "Elzero Logo");
+}*/
+/*console.log(document.querySelectorAll("form")[0][0]);
+console.log(document.getElementsByClassName("result")[0]);
+one = document.querySelectorAll("form")[0][0];
+two = document.getElementsByClassName("result")[0];
+one.oninput = function() { two.textContent = `${one.value} USD Dollar = ${(one.value * 15.6).toFixed(2)} Algerian dinars` }*/
+/*console.log("----------------------------------")
+let bgg = document.querySelector(".one").getAttribute("class");
+let bgge = document.querySelector(".two").getAttribute("class");
+var hhj;
+console.log(bgg)
+console.log(bgge)
+document.querySelector(".one").setAttribute("class", bgge);
+document.querySelectorAll(".two")[1].setAttribute("class", bgg);
+console.log("----------------------------------")
+
+hhj = document.querySelector(".one").innerHTML;
+console.log(document.querySelector(".one").innerHTML)
+
+document.querySelector(".one").innerHTML = "document.querySelector().innerHTML";
+
+document.querySelector(".one").innerHTML = hhj;
+document.querySelector(".two").innerHTML = `${document.querySelector(".two").innerHTML}+1`
+console.log(document.querySelector(".one").attributes.length)*/
+console.log("----------------------------------")
+    /*console.log(document.getElementsByTagName("img")[0]);
+
+    for (let i = 0; i < 5; i++) {
+        if (document.getElementsByTagName("img")[i].hasAttribute("Alt")) {
+            document.getElementsByTagName("img")[i].alt = "Old"
+        } else {
+            document.getElementsByTagName("img")[i].alt = "Elzero"
+        }
+    }*/
+    /*
+let hbhb = document.getElementsByTagName("form")[0];
+let xxx = document.getElementsByTagName("input")[0];
+let xxxx = document.getElementsByTagName("input")[1];
+let xxxex = document.getElementsByTagName("select")[0];
+
+hbhb.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    document.querySelectorAll(".box").forEach(event => event.remove());
+
+    // Clear the entire page (remove all elements within the body)
+
+    for (let i = 0; i < xxx.value; i++) {
+        let myElement = document.createElement(`${xxxex.value}`);
+        myElement.setAttribute("class", "box");
+        myElement.setAttribute("title", "element");
+        myElement.setAttribute("id", `id${i}`);
+        myElement.textContent = `${xxxx.value}`;
+        document.body.appendChild(myElement);
+    }
+});*/
+    /*for (let i = 0; i < document.links.length; i++) {
+        if (document.getElementsByClassName("open")[i].textContent === "Elzero") { console.log(document.getElementsByClassName("open")[i].textContent) }
+
+
+
+    }*/
+    /*
+    window.onload = function() {
+        for (let i = 0; i < document.links.length; i++) {
+            if (document.getElementsByClassName("open")[i].textContent === "Elzero") { document.getElementsByClassName("open")[i].click() }
+        }
+
+    }*/
+    /*
+    console.log(document.getElementsByClassName("classes-to-add")[0])
+
+    document.getElementsByClassName("classes-to-add")[0].onblur = function() {
+        kk = document.createElement("div");
+        kk.setAttribute("new", "box");
+        console.log("hi")
+        kk.textContent = document.getElementsByClassName("classes-to-add")[0].value;
+        document.querySelectorAll("div")[3].appendChild(kk);
+
+    };
+    console.log(document.getElementsByClassName("new")[1])
+        /*document.getElementsByClassName("classes-to-remove")[0].onblur = function() {
+            for (let i = 0; i < document.getElementsByClassName("new").length; i++) {
+
+
+
+                if (getElementsByClassName("classes-to-remove")[0].value == document.getElementsByClassName("new").textContent) {
+                    document.getElementsByClassName("new").remove()
+                }
+            }
+        }*/
+    /*
+    document.getElementsByClassName("new").addEventListener("blur", function(e) {
+        console.log(e)
+    });*/
+    /*
+    let add = document.querySelector(".classes-to-add");
+    let remove = document.querySelector(".classes-to-remove");
+    let current = document.querySelector("[title = 'Current']");
+    let cls = document.querySelector(".classes-list div");
+
+    function addOrRemove() {
+        // remove all elements at the start
+        document.querySelectorAll("span").forEach(el => el.remove());
+
+        // add and remove classes
+        for (let i = 0; i < this.value.trim().split(" ").length; i++) {
+
+            if (add.value) { current.classList.add(this.value.trim().split(" ")[i]) }
+            if (remove.value) { current.classList.remove(this.value.trim().split(" ")[i]) }
+
+        }
+        this.value = "";
+
+
+        // add and remove spans
+        if (current.classList.length) {
+            [...current.classList].sort().forEach(function(el) {
+                let bb = document.createElement("span");
+                bb.textContent = el
+                    .appendChild(cls)
+            })
+        } else cls.textContent = "No Classes To Show";
+    }
+
+    add.onblur = addOrRemove;
+    remove.onblur = addOrRemove;*/
+    /*
+let p = document.getElementsByTagName("p")[0];
+let div = document.querySelector(".our-element");
+let startDiv = div.cloneNode();
+let endDiv = div.cloneNode();
+
+// remove paragraph
+p.remove();
+
+function addAttr(el, ind) {
+    console.log(ind)
+    el.className = ind.toLowerCase();
+    el.title = `${ind} element`;
+    el.setAttribute("data-value", ind);
+    el.textContent = ind;
+}
+addAttr(startDiv, "Start");
+addAttr(endDiv, "End");
+
+// add div element
+
+div.before(startDiv);
+div.after(endDiv);*/
+    /*
+    let promptMsg = prompt("Print Number From – To", "Example: 5-20");
+
+    console.log(promptMsg.split("-", 2));
+    a = Number(promptMsg.split("-", 2)[0]);
+    b = Number(promptMsg.split("-", 2)[1]);
+    for (let i = a; i <= b; i++) {
+        var newDiv = document.createElement('div');
+        newDiv.innerText = i;
+        document.body.appendChild(newDiv);
+    }*/
+    /*let allLis = document.getElementsByTagName("span")[0];
+    console.log(allLis)
+    let nigger = document.getElementById("myDiv");
+    console.log(nigger)
+    allLis.onclick = function() {
+
+
+        nigger.style.display = 'none';
+
+
+
+
+
+    }*/
+    /*
+    let div = document.querySelector("div");
+
+    function countdown() {
+        div.innerHTML -= 1;
+        if (div.innerHTML === "8") {
+            window.open("https://elzero.org/", "_blank", "width=400,height=400,left=200,top=10");
+            clearInterval(counter);
+
+        }
+
+    }
+
+    let counter = setInterval(countdown, 1000);*/
+
+/*
+document.querySelector("#font").onchange = function() {
+    window.localStorage.setItem("font", font.value);
+    document.body.style.fontFamily = font.value;
+}
+document.querySelector("#color").onchange = function() {
+    //onchange ttbdl koul khatra  This function will be executed whenever the value of the element changes.
+    window.localStorage.setItem("font", color.value);
+    document.body.style.color = color.value;
+}
+document.querySelector("#size").onchange = function() {
+    window.localStorage.setItem("font", size.value);
+    document.body.style.fontSize = size.value;
+}
+/*
+let one = document.querySelector("#one");
+let two = document.querySelector("#two");
+let three = document.querySelector("#three");
+let select = document.querySelector("#select");
+one.oninput = function() { window.sessionStorage.setItem("xx", one.value) }
+two.oninput = function() { window.sessionStorage.setItem("xxx", two.value) }
+three.oninput = function() { window.sessionStorage.setItem("xxxx", three.value) }
+select.oninput = function() { window.sessionStorage.setItem("xxxxx", select.value) }
+one.value = window.sessionStorage.getItem("xx", one.value);
+two.value = window.sessionStorage.getItem("xxx", two.value);
+three.value = window.sessionStorage.getItem("xxxx", three.value);
+select.value = window.sessionStorage.getItem("xxxxx", select.value)*/

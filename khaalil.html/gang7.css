@@ -1,0 +1,169 @@
+/*hadi mn 57 hta 72*/
+
+
+/*GIRLD*/
+
+.parent {
+    background-image: linear-gradient(bottom, red 20%, red 40%, black 40%, black 80%);
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: limegreen;
+    /*ll parent */
+    display: grid;
+    /*bach t9dr dirlhom colums*/
+    /*3add al a3mida / in px % auto fraction  */
+    grid-template-columns: 25% repeat(2, 10%);
+    /*l3ard*/
+    /*lfr9 bin auto w fraction
+    fraction hyia partie mn missaha l ba9ya
+    auto ydi el missaha min bach ykon fih elm
+    fraction ydi lba9i mayhchamch
+    */
+    grid-template-columns: minmax(200px, 400px);
+    /* ybda lwl mn 200px wla ba9i ydi max 400 */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 100px 200px 100px;
+    /* height ta3 grid*/
+    row-gap: 20px;
+    /*espace ma bin esofof*/
+    column-gap: 20px;
+    /*espace ma bin a3mida*/
+    /*ki dir gap apres justify-content :space-between yjok fstr m3a espace
+    binathom*/
+    grid-template: 1fr 50px / 20px auto;
+    /*tdi 1fr fl row yb9a 50px w tedi auto f column w yb9a 20px*/
+}
+
+.parent div {
+    background-color: yellowgreen;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    /*ki dert nav win kayn nav ydi hadak l gird*/
+    grid-row-start: 2;
+    /*esaf mnin ybda*/
+    grid-column-start: 3;
+    /*l3amod 3*/
+    grid-row-end: 3;
+    grid-column-end: 3;
+    grid-area: 2/2/3/3;
+    /*kima yli  fo9ha*/
+    /*ki tdirlo head ydi kaml l column lfo9a*/
+    grid-area: nav;
+    /*2 D transform
+scale x
+scale y
+*/
+    /*lfr9 bino w bin height wl weight  scallign chrl elm ytmadd mam 
+    ida kant fi ktiba*/
+    transform: scaleX(1.5);
+    /*ykbar 3la x*/
+    /*ROTATE*/
+    transform: rotate(45deg);
+    /*n9dro ndiro rotat w scale w translate en meme temps mais 
+    ybda b transalate bach ydir lo5rin*/
+    transform: translate(100px, 0);
+    /*thark ll elm*/
+    /*mlih ll animation*/
+    transform: skew(120deg, 120deg);
+    /*inhiraf*/
+    transform: matrix(1, 0, 0, 1, 0, 0)
+    /*transform : matrix(scalex , skewy , scaley , transformx , translatey*/
+    /*TRANSFORME ORIGINE*/
+    /*
+syntax
+default values => 50% 50% 0
+2d transform => transform origin (x ,y)
+l axe x
+css unit px em 
+%
+keyword :
+left 0%
+center 50%
+right 100%
+l axe y
+css unit px em 
+%
+keyword :
+top 0%
+center 50%
+buttom 100%
+*/
+}
+
+.page {
+    height: 100vh;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto auto auto;
+    /*bach t9sm grid*/
+    /*tdir . bach t93d vid*/
+    grid-template-areas: "logo logo nav . nav nav nav nav nav nav"
+    /*dk ybda estr 2 w hadi fl father*/
+    "cont cont cont cont cont cont cont  side side side" "foot foot foot foot foot foot foot foot foot foot  ";
+    /*ll child*/
+    grid-column: 1 / 5;
+    grid-column: span 4;
+    grid-column: 3 / span 5;
+    grid-row: 3 / span 5;
+    /*f ga3 les cas yzido mn taht*/
+    /* ybda win w yhabss win*/
+    /*span 4 ydi plact 4 a3mida*/
+    /*first position 3 and it take 5 colums*/
+    /*w kayn ll row tanik*/
+}
+
+h2 {
+    /*ki dert nav win kayn nav ydi hadak l gird*/
+    grid-row-start: 2;
+    /*esaf mnin ybda*/
+    grid-column-start: 3;
+    /*l3amod 3*/
+    grid-row-end: 3;
+    grid-column-end: 3;
+    grid-area: 2/2/3/3;
+    /*kima yli  fo9ha*/
+    /*ki tdirlo head ydi kaml l column lfo9a*/
+    grid-area: nav;
+    background-color: red;
+    color: aquamarine;
+    /*ll elment tab3 ll transform*/
+    transform-origin: 50% 50%;
+    transform: rotate(25deg);
+    /*thaddlo lmbaa win no9ta yli ydor mnha */
+    transform: rotate3d( 1, 1, 2, 5deg);
+    /*PERSPECTIVE*/
+    transform: rotate3d( 20px, 20px, 20px);
+    /*ll father dir perspective : chal px bach ydr ythark 3la z*/
+    /*kayn perspective origin kima transform thadd mniin rah ybda */
+}
+
+nav {
+    /*ll son*/
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+    background-color: bisque;
+}
+
+section {
+    grid-area: cont;
+}
+
+aside {
+    grid-area: side;
+    background-color: bisque;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blanchedalmond
+}
+
+ul li {
+    display: inline;
+}

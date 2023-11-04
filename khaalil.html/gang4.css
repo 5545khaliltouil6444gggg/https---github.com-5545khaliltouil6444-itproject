@@ -1,0 +1,36 @@
+.parent {
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.parent div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.436);
+    display: inline-block;
+    width: 25%;
+    /*dk tbda*/
+    float: left;
+    /*ndiro over flow hidden bach nsegmo background w 
+    ndiroha ll parent */
+    /*float chrol ll 3annaser t3om*/
+    /*bach yjo str display inline block //widht*/
+    /*
+   bach nsegmo f ligne wahda  ndiro ll parent:
+   .parent {
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    overflow: hidden;
+}
+wla n5dmo b l height ll .parent */
+    /*over flow ymsah containt ezayd ga3*/
+    clear: both;
+    /*  le lemment yli mayjihch float (tmssh taatir float)  
+    yji f new line 
+    clear tji lelment machi div  */
+}
+
+
+/*calcul*/

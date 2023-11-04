@@ -1,0 +1,82 @@
+/*RESPOSIVE*/
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.parent>div {
+    background-color: red;
+    width: 290px;
+}
+
+@media print {
+    /*ki tji t imprimer la page kifach ykon css les condition yjo ki yji t printer*/
+    .parent>div {
+        background-color: rgb(234, 234, 234);
+        width: 290px;
+    }
+}
+
+@media ( max-widht: 1000px) and (min-widht: 1000px) {
+    /*ki ykon l widht 100px t appliquer hado les etapes*/
+    /*t9sr deux condition*/
+    .parent>div {
+        background-color: blue;
+        width: 290px;
+    }
+}
+
+@media (max-widht: 767px) and (min-widht: 1000px) {}
+
+@media (max-widht: 767px) {
+    .parent div {
+        width: calc(50%-10px);
+    }
+}
+
+@media ( min-widht: 768px) and (min-widht: 1000px) {
+    .parent div {
+        width: calc(25%-5px);
+    }
+}
+
+@media ( min-widht: 992px) and (min-widht: 1000px) {}
+
+@media ( min-widht: 1200px) and (min-widht: 1000px) {}
+
+
+/*CREAT A FRAMEWORK*/
+
+.cirle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*GLOBAL VALUE*/
+
+
+/*
+initial => tmd initial value za3ma ll span 
+
+unset => inhert f value yli ytwarto w initial f value yli maytwartoch
+
+all => tselectioner ga3 les elm f div
+
+font w l color ytwarto
+
+revert => bach traj3o ll user ugent
+
+
+*/

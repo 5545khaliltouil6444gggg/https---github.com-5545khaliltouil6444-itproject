@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        body {
+            background-color: #f0f0f0;
+        }
+        
+        .one {
+            background-color: white;
+            margin: 200px auto;
+            padding: 40px;
+            width: 200px;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            color: orange;
+        }
+        
+        .h {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .h input {
+            display: block;
+            height: 26px;
+            border: none;
+            background-color: #eee;
+            padding: 5px;
+            border-radius: 7px;
+        }
+        
+        input:focus {
+            outline: none;
+            /* Optional: remove the default focus outline */
+        }
+        
+        .h button {
+            display: block;
+            border-color: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: orange;
+            width: 70px;
+        }
+        
+        span {
+            position: absolute;
+            font-weight: bold;
+            font-size: x-large;
+            color: red;
+            padding-left: 145px;
+            padding-top: 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="one">
+        <h1>To-Do List</h1>
+        <div class="h">
+            <input type="text" name="" id="inputs" placeholder="add your task">
+            <button class="my-button">Add</button>
+        </div>
+        <div class="output"></div>
+    </div>
+    <script>
+        var myButton = document.getElementsByClassName("my-button")[0];
+        let g = document.getElementsByClassName("one")[0];
+        let input = document.getElementById("inputs")
+        let output = document.getElementsByClassName("output")[0]
+        console.log(output);
+        myButton.onclick = function() {
+
+
+            let work = document.createElement("div");
+            work.innerText = input.value;
+            output.appendChild(work);
+            work.style.marginTop = "30px";
+            var remove = document.createElement("span");
+            remove.innerHTML = "\u00d7";
+            remove.onclick = function() {
+                output.removeChild(work); // Remove the task when the remove button is clicked
+            };
+            work.appendChild(remove);
+
+            output.appendChild(work);
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>

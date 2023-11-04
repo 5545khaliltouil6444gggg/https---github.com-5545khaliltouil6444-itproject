@@ -1,0 +1,17 @@
+h1 {
+    color: #1652df;
+}
+
+h2 {
+    color: #eb1919;
+}
+
+div {
+    text-align: justify;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row-reverse;
+    float: Justify content center;
+}

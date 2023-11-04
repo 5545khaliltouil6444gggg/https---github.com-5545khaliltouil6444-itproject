@@ -1,0 +1,342 @@
+/*hadi mn 38 ll 52*/
+
+
+/*
+
+
+vendors prefixes ki ykon kayn features jdid f css ykon f testing 
+lazm tdir wahd l code bach t9dr t utulisiha
+w kol code yrmzz ll browser
+
+*/
+
+
+/*par exemple .class*/
+
+
+/*.class {
+    -webkit-animation: alternate;
+    -moz-animation: alternate;
+    -o-animation: alternate;
+    -ms-flex: auto;
+}*/
+
+
+/*div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px auto;
+    border-radius: 50px;
+    outline: 2px solid red;
+    outline hiya border mn bra nktboh kima l border 
+    mais ma3doch itijah ya3ni mafihch left w right
+    w mat9drch tdiro radius
+    border-radius: 50px 50px;
+    zoj 9iyam t9dr tdirha bach tthakm fl achkal
+}*/
+
+
+/*box shadaw*/
+
+
+/*
+yjo haka 
+h-shadaw v-shadaw blur spread color
+w t9dr tdir zoj les shadaw
+*/
+
+
+/*box sizing*/
+
+div {
+    box-shadow: 2px 2px 2px red, 2px 2px 2px red;
+}
+
+
+/*f normal mayjoh f str wahd*/
+
+* {
+    box-sizing: border-box;
+    /*dir hna box sizzing bach ga3 les elment yji fihom*/
+}
+
+
+/*.parent {
+    width: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: aquamarine;
+}*/
+
+
+/*.one {
+    background-color: rgb(232, 133, 2);
+    width: 300px;
+    float: left;
+    margin: 20px;
+    bach ndiro deux box 9dam ba3daham
+    m3a widht yda5l m3ah l border wl padding
+    box-sizing: border-box;
+    yda5l m3ah padding w l border
+}*/
+
+
+/*transition*/
+
+.one {
+    /*la duree de transition*/
+    /*lw9t bach ynta9l mn hala ll hala*/
+    transition-duration: 5000ms;
+    /*le retard yli rah ydiro e div bach ythark*/
+    transition-delay: 0s;
+    /*t5ayr les elm yli rah tdir 3lihom transition*/
+    transition-property: all;
+    /*all bach ta3rf 3lamn tab9 l transition*/
+    /*bach tthakm f la vitesse*/
+    /*linear vitesse tabta 
+    ease in f debut t9ila*/
+    transition-timing-function: linear;
+    /* property duration delay timign function */
+    /*widht ydir 2s height 3s*/
+    /*  transition: widht 2s, height 3s;*/
+    transition: all .5s .5s linear;
+}
+
+.one :hover {
+    margin-left: 500px;
+    height: 120px;
+}
+
+
+/*
+important declaration 
+hadi ma3naha bli hadi l5assya 3andha awlawiya 3la lao5rin
+*/
+
+
+/*.one {
+    background-color: black !important;
+}
+
+.one {
+    background-color: aqua;
+}
+*/
+
+
+/*margin collapse*/
+
+
+/*ki ytassl zouj margin za3ma top w buttom ysralhom collapse tsma
+ywali 3andhom margin wahd*/
+
+
+/*vertcial margin howa yli ysralo collaps (yomna w yosra matjich)*/
+
+
+/*margin l kbir mabin zouj 3anassr howa yli ydiroh*/
+
+
+/*collapsing maysrach binathom ki ykon kach elme f lwsst*/
+
+
+/*ki ykon div da5l div colapssing yji*/
+
+.parent {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.parent .one,
+.parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.one {
+    background-color: black;
+}
+
+.two {
+    background-color: blue;
+}
+
+
+/*
+CSS VARIABLES
+global :
+local :
+nsta3lo les var b la fontion var()
+var(var name , fallback value)
+fallback bach ida var ta3k ralt ymchi fall
+
+
+*/
+
+:root {
+    --maincolor: blue;
+    --mainpadding: 20px;
+}
+
+.main {
+    background-color: var(--maincolor);
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    color: green;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+p {
+    color: green;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+a :hover {
+    color: green;
+}
+
+.local {
+    --maincolor: blue;
+    background-color: var(--maincolor);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+FLEX BOX
+for parent
+display : flex 
+flex-derction: row(yjo str)
+*/
+
+
+/*direction fl float tbdlha mn son mais fl flex mn parent tdir 
+derction*/
+
+
+/*row reverse chrl tbdl la list bla matbdl lartib esafha*/
+
+
+/*column tdirhom 3amod
+w kayn colmn - reverse
+*/
+
+
+/*
+flex-wrap:wrap
+ma3naha kolma yzid div  3la l box yzido mn taht psq flex box marin tsma 
+yzid wahdo tsma nta ki tdir wrap y93od f plassto
+w kayn wrap-reverse yt9abo les elm
+*/
+
+.flex {
+    background-color: blue;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    /* direction wrap      */
+    flex-flow: row wrap;
+    /*tji fl father*/
+    justify-content: flex-end;
+    /*bl 3ard*/
+    /*widht:calc(100%/3)*/
+    /**/
+    justify-content: center;
+    /*edir centent f center*/
+    /*space mabin les elm*/
+    /*space -around tdir biha space 9bl */
+    /*space-evenly yiha space between w around*/
+}
+
+.flex div {
+    background-color: red;
+    color: aqua;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    flex-basis: 300px;
+    /**/
+}
+
+.float div {
+    float: left;
+}
+
+
+/*justify-content*/
+
+.two {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+/*ALIGN ITMS*/
+
+
+/*align-itms: flex-start l content ytratb f toll ta3
+div mn lfo9*/
+
+
+/*align-itms: */
+
+.center {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    /*fl 3ard*/
+    align-items: center;
+    /*f toll*/
+    /*align-content*/
+    /*for the father*/
+    align-items: flex-end;
+    /*yhkm l content kaml kima rah w ydiro end */
+    /*space around ydir espace mabinathom*/
+    flex-basis: 300px;
+    /*tdir bih height w weight mais 3la hsab row*/
+    /*yji f son*/
+}
+
+
+/*flex grow*/
+
+.center {
+    /*hado f child*/
+    flex-grow: 1;
+    /*les elment ykbro f wa9t wahd*/
+    /*w t9dr tdiro f elme  wahd mais
+    ykbr ki ykon placa vide*/
+    flex-shrink: 0.5;
+    /*ytkmch*/
+    order: 2;
+    /*bach matjich*/
+    /*grow shrink basis*/
+    flex: 0 1 auto;
+    /*bach yjo zouj div 9dam ba3dahom
+    dir display : inline-flex / yjo 9dam ba3dahom*/
+    /*hado l child*/
+    align-self: center;
+    /*elem da5l div thab tdiro l fo9 wla taht 
+    wla f center*/
+    /*3akss align itms yli thark les elem kaml*/
+}

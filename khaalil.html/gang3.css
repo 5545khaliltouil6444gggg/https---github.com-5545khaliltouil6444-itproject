@@ -1,0 +1,48 @@
+div {
+    font-size: 20px;
+    /* lataille de mot*/
+}
+
+html {
+    font-size: 50px;
+}
+
+
+/*
+1em=> time 
+font size hiya 16px (par defaut)
+rem=>root time(root elment howa html 1rem =>chhal mn px ta3 html)
+pourcentage => ydi mn father
+vw => 1% mn weidht
+*/
+
+div span {
+    font-size: 2em;
+    /* 2 em ma3naha hna 40px 1em ywrtha mn yli 9blha */
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
+/*font style style ta3 lktiba */
+
+h2 {
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 100;
+    /*l3ard ta3 font tdirha bl chiffre wla tdirha bold*/
+}
+
+h3 {
+    cursor: grab;
+    /*ta3 la sorie t9dr tdirha cliquabale wla kima habit*/
+}
+
+
+/*
+float 
+
+
+*/

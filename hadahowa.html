@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--ta3 html-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--ll 3qrbiya-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is our book store">
+    <!--n9dro naho `` ki tkon klma wahda-->
+    <!--this is a comment-->
+    <title>Document</title>
+    <style></style>
+    <!--this is for css-->
+    <script></script>
+    <!--this is for js-->
+</head>
+
+<body>
+    <p class="one"></p>
+    <!--ll classe ndiro #
+    wl id .-->
+    <!--paragraph (bloc element)-->
+    we have a big sale
+    <!--mkach margine machi block element -->
+    <p id="oo">this is my book store <del>tnqhi txt</del>
+        <u>under line</u>
+        <small>txt sgir</small>
+        <ins>tzid txt</ins>
+        <a href="" target="_blank" title="">lharachi</a>
+        <!--blank tftah f page jdida-->
+        <!--href that tm le lien-->
+        <!--title ll page-->
+        <!--y9dr lien ydik l txt f mame page -->
+    </p>
+    <img src="" alt="">
+    <!--src mnin jbt tswira
+     w alt lktiba yli tji 9ble tswira-->
+    <ul>
+        <li>qqq</li>
+        <li>kkk</li>
+        <li>jjj</li>
+    </ul>
+    <ol start="100" type="1">
+        <li>acab</li>
+    </ol>
+    <!--ol bl ar9am w type bach tbda-->
+    <dl>
+        <dt>html</dt>
+        <dd>huhuhuhuh</dd>
+        <dl>tags</dl>
+    </dl>
+    <!--dl description list
+dt term
+ dd description-->
+    <table border="2px">
+        <thead>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+            </tr>
+        </tbody>
+        <!-- tr str ta3 table
+td les element
+th f head
+colspan tls9 2 colonnes-->
+        <tfoot>
+            <td>a</td>
+            <td>b</td>
+            <td colspan="2">c</td>
+        </tfoot>
+    </table>
+    <span>span</span>
+    <!--iligne elment-->
+    <p>acab acab n** ya l<br> policer</p>
+    <!-- br tsoter str-->
+    <!-- for background colour lazm div-->
+    <div>
+        <div>
+            <h3>book title</h3>
+            <p>book description</p>
+            <span>400</span></div>
+        <div>
+            <h3>book title</h3>
+            <p>book description</p>
+            <span>400</span></div>
+        <div>
+            <h3>book title</h3>
+            <p>book description</p>
+            <span>400</span></div>
+    </div>
+    <!-- sementic tags-->
+
+    <head>head of the web site</head>
+    <nav>navigation bar</nav>
+    <section>section</section>
+    <aside> le cotee ta3 site</aside>
+    <article>les articles f site</article>
+    <figure>
+        <figcaption></figcaption>
+    </figure>
+    <audio controls>
+<source src="" type="">
+</audio>
+    <!--control bach tzid w tna9ss sout
+loop t3awd mn lwl-->
+    <video controls>
+    <source src="" type="video/mp4">
+    <track src="my file.vtt" kind="" label="">
+    not support
+    <!-- poster tswira tchofha 9bl matbda la video
+    muet bla son
+    track ll traduction kin . y9dr kon audio wla traduction
+    label asm
+-->
+</video>
+    <form novalidate target="_blank">
+        <label>username</label>
+        <input type="text" required placeholder="usexrname" value="ddddd">
+        <label for="password">password</label>
+        <input type="email" required>
+        <input type="submit" required>
+        <!--hadi ta3 l button-->
+    </form>
+    <!--novalited bach tb3at ll back no valited
+    -->
+    <!--form bach t3amr kach form
+input bach td5l info
+label description ll input 
+required bach mayb3atch l file vide 
+placeholder bach tktb da5l l button
+value ki yd5ol ll mra lwla tban hadik kelma
+ki dir f type email lazmn tdir arobaz
+-->
+    <form action="" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </form>
+    <!--action ta3 back end bach tb3at les donnes
+    name hiya l plassa yli ytb3at fiha les donnes bach yfar9 binathom
+methode get les donnes ybano lfo9 mais post y5aber les donnes-->
+    <input type="hidden">
+    <!--hide l input-->
+    <input type="reset">
+    <!--reset y suprimer ga3 les donnes-->
+    <input type="range" min="0" max="20" step="2" value="0">
+    <!--range t9dr tzid w tn9ss
+min win tbda
+ max win t5lass
+step le pat
+value win t inializa-->
+    <input type="number" min="0" max="20" step="2" value="0">
+    <!-- compteur wl max wl min homa les born-->
+    <input type="text" id="username" value="acab" readonly>
+    <!--read only mat9drch tktb f input-->
+    <input type="text" id="username" value="baca" disabled>
+    <!--disable you can't send data-->
+    <input type="text" id="username" value="acab" autofocus>
+    <!-- autofocus bach y tslectiona l input w tbda tktb direct-->
+    <input type="text" id="username" value="acab" minlength="10" maxlength="100">
+    <!-- ta3tilo chhal 3la l a9l lazm y3amr minlenght-->
+    <hr>
+    <div>
+        <br>
+
+        <input id="win" type="radio" name="os" value="windows" checked>
+        <label for="win">windows</label>
+        <br>
+
+        <input type="radio" name="os" value="windows">
+        <label>ios</label>
+        <br>
+
+        <input type="radio" name="os" value="windows">
+        <label>mac</label>
+        <br>
+        <!--radio t5ayr wahd brk fihom 
+chacked tbda deja bihom
+bach nrabto input b label ndiro id f input w for f label b mem id-->
+
+    </div>
+    <div>
+        <br>
+
+        <input id="win1" type="checkbox" name="os" value="windows" checked>
+        <label for="win1">windows</label>
+        <br>
+
+        <input type="checkbox" name="os" value="windows">
+        <label>ios</label>
+        <br>
+
+        <input type="checkbox" name="os" value="windows">
+        <label>mac</label>
+        <br>
+        <!--radio t5ayr wahd brk fihom 
+chacked tbda deja bihom
+bach nrabto input b label ndiro id f input w for f label b mem id
+checkbox t9dr tdir bzaf choix-->
+    </div>
+    <label for="book">choose book</label>
+    <select name="book" id="book" multiple> <optgroup label="book1">
+        <option value="1">book</option>
+        <option value="2">book</option>
+        <option value="3">book</option>
+        <option value="4">book</option>
+        <option value="5">book</option>
+    </optgroup>
+    <optgroup label="book2">
+        <option value="1" selected>book</option>
+        <option value="2">book</option>
+        <option value="3">book</option>
+        <option value="4">book</option>
+        <option value="5">book</option>
+    </optgroup>
+    <optgroup label="book3">
+        <option value="1">book</option>
+        <option value="2">book</option>
+        <option value="3">book</option>
+        <option value="4">book</option>
+        <option value="5">book</option>
+    </optgroup></select>
+
+    <!--label hiya checkbox kbira book hiya wach yban w value 
+hiya wach ytab3at ll backend
+multipl y9dr y5ayr bzaf-->
+    </select>
+    <hr>
+    <textarea name="sub" cols="30" rows="10" placeholder="txt"></textarea>
+    <!-- txt placa tktb biha-->
+    <hr>
+    <label>cv</label>
+    <input type="file">
+    <hr>
+    <label>search</label>
+    <input type="search" placeholder="hh">
+    <!-- this is for search-->
+    <hr>
+    <label>url</label>
+    <input type="url">
+    <hr>
+    <label>date</label>
+    <input type="date">
+    <!-- bach tdir la date w kayn ta3 month w time-->
+    <hr>
+    <input list="programming" name="prog">
+    <datalist>
+    <option value="python">
+        <option value="c++">
+            <option value="c"></option>
+        </option>
+        <!--data list kima select mais data n9dro nhawsso fiha-->
+</datalist>
+    <q>gg bb nn</q>
+    <!-- tzid ""-->
+    <blockquote>kima q</blockquote>
+    <button>click</button>
+    <!---button l cliquer 3lih ydir action-->
+    <hr> https://www.youtube.
+    <wbr>/watch?v=qfPUMV9J5yw&ab_<wbr>=ElzeroWebSchool
+    <!-- wbr t5alf biha estr-->
+
+    <p>لسلام عليكم hello world</p>
+    <p>hello world<bdi>سلام عليكم</bdi> </p>
+    <!--bdi t5lik tratb kalimat ki ykono bl arab w anglais -->
+    <code> 
+    <pre> printf("hello world")
+        printf("hello world")
+        printf("hello world")
+    </pre>
+    </code>
+
+    <!--code t9dr tktb code f page web pre thafd 3la el masafat ifrime t9dr tjib 
+    web page f la page ta3k-->
+    <iframe src="https://chat.openai.com/"></iframe>
+    <form action="">
+        <input type="text">
+        <div>send</div>
+    </form>
+
+    <div role="checkbox" aria-checked="true" tabindex="0" aria-label="plan1"></div>
+    <!--- role ma3naha hada check box mais ndiroh b js w yfahmo screan 
+    reader tabindex bach t9dr troh lihom
+    tselectioynihm  w--->
+    </div>
+</body>
+
+</html>

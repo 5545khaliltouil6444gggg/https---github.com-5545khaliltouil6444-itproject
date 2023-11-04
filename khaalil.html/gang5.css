@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+}
+
+div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: aliceblue;
+    float: left;
+    width: 18.8%;
+    /*wla dir la fonction
+    widht: calcul(94%/5)*/
+    margin-left: 1%;
+    opacity: 0.9;
+    /*chafafiya ta3 kaml e div*/
+}
+
+
+/*
+content widht is : 100%
+5 spaces 1% * 5 => 5% from content widht
+95% vide
+4 elment the widht is : 95% / 4
+*/
+
+
+/*
+content widht is : 100%
+6 spaces 15px * 5 => 90px from content widht
+100%-90px  vide
+4 elment the widht is : 100%-90px / 4
+w fl fonction tktb 100%-90px
+*/
+
+.one {
+    background-color: aquamarine;
+    margin-top: 30px;
+    position: static;
+    /*maytharakch*/
+    position: relative;
+    /*ythark  bensba l neffso
+    t liberer l elment*/
+    top: 30px;
+    position: absolute;
+    /*two yji tahto chrl yji tahto kli one makacho
+    ki ykon da5ll div relative ythark da5lo may9drch y5rj*/
+    position: fixed;
+    /*ymchi m3ak f chacha wythark f  bra chacha mam ki ykon da5l div
+    w uscroller*/
+}
+
+.two {
+    background-color: gray;
+}
+
+.parent {
+    position: relative;
+    /*ndiro f parent relative w son absolut bach ythark son f father
+    bla may5rj mn parent*/
+    width: 200px;
+    height: 300px;
+    background-color: azure;
+}
+
+.kkk {
+    background-color: red;
+    color: antiquewhite;
+    position: sticky;
+    top: 0px;
+    /*sticky bach t scroller m3ak ediv ki thbatt f la page w ykon tabt
+    top tdir la position ki tscroller*/
+    /*l fr9 bin sticky w absolut yhkam la position ta3o 3la hssab 
+    la page mais sticky yji mor divs */
+    /*sticky ki t5llas la page bach yscroller mais fixed  lala*/
+}
+
+
+/*z index*/
+
+
+/*bach ya5dm lazm tkon position mais machi mortabit b nwr position*/
+
+.one {
+    background-color: aquamarine;
+    margin-top: 30px;
+    z-index: 2;
+    /*tartib 2*/
+}
+
+.two {
+    background-color: rgba(127, 255, 200, 0.362);
+    margin-top: 30px;
+}
+
+.three {
+    background-color: rgba(127, 255, 212, 0.299);
+    margin-top: 30px;
+}
+
+div {
+    padding: auto;
+    width: 10px;
+    color: bisque;
+    text-align: center;
+    position: absolute;
+    /*tgi div fo9 khoh*/
+}
+
+
+/*ta3 list */
+
+ul {
+    list-style-type: armenian;
+    /*tertib f list */
+    list-style-position: inside;
+    /* eni9at yjo chrl da5l 
+    e div */
+    list-style-image: url();
+    /*tji tswira f plasst eni9at da5l 
+    url tdir le lien */
+}
+
+li {
+    background-color: aqua;
+    margin-bottom: 10px;
+}

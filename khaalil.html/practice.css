@@ -1,0 +1,734 @@
+                                                                * {
+                                                                    -webkit-box-sizing: border-box;
+                                                                    -moz-box-sizing: border-box;
+                                                                    box-sizing: border-box;
+                                                                }
+                                                                
+                                                                 :root {
+                                                                    --main-color: #2196f3;
+                                                                    --main-color-alt: #1787e0;
+                                                                    --main-transition: 0.3s;
+                                                                    --main-padding-top: 100px;
+                                                                    --main-padding-bottom: 100px;
+                                                                    --section-background: #ececec;
+                                                                }
+                                                                
+                                                                html {
+                                                                    scroll-behavior: smooth;
+                                                                }
+                                                                
+                                                                body {
+                                                                    font-family: "Cairo", sans-serif;
+                                                                    z-index: 100;
+                                                                }
+                                                                
+                                                                a {
+                                                                    text-decoration: none;
+                                                                }
+                                                                
+                                                                ul {
+                                                                    list-style: none;
+                                                                    margin: 0;
+                                                                    padding: 0;
+                                                                }
+                                                                
+                                                                .container {
+                                                                    padding-left: 15px;
+                                                                    padding-right: 15px;
+                                                                    margin-left: auto;
+                                                                    margin-right: auto;
+                                                                }
+                                                                /* Small */
+                                                                
+                                                                @media (min-width: 768px) {
+                                                                    .container {
+                                                                        width: 750px;
+                                                                    }
+                                                                }
+                                                                /* Medium */
+                                                                
+                                                                @media (min-width: 992px) {
+                                                                    .container {
+                                                                        width: 970px;
+                                                                    }
+                                                                }
+                                                                /* Large */
+                                                                
+                                                                @media (min-width: 1200px) {
+                                                                    .container {
+                                                                        width: 1170px;
+                                                                    }
+                                                                }
+                                                                
+                                                                .work-steps {
+                                                                    padding-top: var(--main-padding-top);
+                                                                    padding-bottom: var(--main-padding-bottom);
+                                                                    position: relative;
+                                                                    background-color: var(--section-background);
+                                                                }
+                                                                
+                                                                .work-steps .container {
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: space-between;
+                                                                }
+                                                                
+                                                                .work-steps .container .info {
+                                                                    display: flex;
+                                                                    align-items: space-between;
+                                                                    justify-content: center;
+                                                                    flex-direction: column;
+                                                                }
+                                                                
+                                                                .work-steps .container .info .box {
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: space-between;
+                                                                    margin: 20px 20px 20px 70px;
+                                                                    padding: 0px 20px 0px 20px;
+                                                                    border: 2px solid white;
+                                                                    border-radius: 6px;
+                                                                    background-color: #f6f5f5;
+                                                                    position: relative;
+                                                                    z-index: 10;
+                                                                }
+                                                                
+                                                                .work-steps .container .info .box::after {
+                                                                    content: "";
+                                                                    position: absolute;
+                                                                    height: 00%;
+                                                                    width: 00%;
+                                                                    background-color: #ddd;
+                                                                    left: 50%;
+                                                                    top: 50%;
+                                                                    z-index: -1;
+                                                                    border-radius: 6px;
+                                                                    transition: var(--main-transition);
+                                                                    transform: translate(-50%, -50%);
+                                                                }
+                                                                
+                                                                .work-steps .container .info .box:hover::after {
+                                                                    height: 100%;
+                                                                    width: 100%;
+                                                                }
+                                                                
+                                                                .work-steps .container .info .box img {
+                                                                    max-width: 100%;
+                                                                    width: 100px;
+                                                                }
+                                                                
+                                                                .work-steps .container .info .box .text {
+                                                                    padding: 0px 20px 0px 30px;
+                                                                    line-height: 2.4;
+                                                                }
+                                                                
+                                                                .work-steps .container .info .box .text h3 {
+                                                                    font-weight: 600;
+                                                                    font-size: 26px;
+                                                                }
+                                                                
+                                                                .work-steps .container .info .box .text p {
+                                                                    color: #777;
+                                                                    word-spacing: 4px;
+                                                                }
+                                                                
+                                                                .events {
+                                                                    position: relative;
+                                                                    padding-top: var(--main-padding-top);
+                                                                    padding-bottom: var(--main-padding-bottom);
+                                                                    position: relative;
+                                                                }
+                                                                
+                                                                .events .container {
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                    flex-wrap: wrap;
+                                                                }
+                                                                
+                                                                .events .info {
+                                                                    flex: 1;
+                                                                    margin: 20px;
+                                                                }
+                                                                
+                                                                .events .info .time {
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: space-between;
+                                                                    margin: 20px auto;
+                                                                }
+                                                                
+                                                                .events .info .time .unit {
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    border: 1px solid #ececec;
+                                                                    border-radius: 6px;
+                                                                }
+                                                                
+                                                                .events .info .time .unit .days {
+                                                                    display: block;
+                                                                    font-weight: bold;
+                                                                    color: var;
+                                                                    font-size: 30px;
+                                                                    color: var(--main-color);
+                                                                    border: 1px solid #ececec;
+                                                                    text-align: center;
+                                                                    padding: 15px;
+                                                                    padding-bottom: 10px;
+                                                                    border-radius: 6px;
+                                                                }
+                                                                
+                                                                .events .info .time .unit .daysff {
+                                                                    display: block;
+                                                                    height: 50px;
+                                                                    font-weight: bold;
+                                                                    width: 65px;
+                                                                    color: var;
+                                                                    font-size: 30px;
+                                                                    color: var(--main-color);
+                                                                    border: 1px solid #ececec;
+                                                                    text-align: center;
+                                                                    padding: 15px;
+                                                                    padding-bottom: 50px;
+                                                                    padding-left: 15px;
+                                                                    border-radius: 6px;
+                                                                }
+                                                                
+                                                                .events .info .time .unit .h {
+                                                                    display: block;
+                                                                    height: auto;
+                                                                    width: auto;
+                                                                    font-size: 11px;
+                                                                    margin: 10px 10px 10px 12px;
+                                                                    color: grey;
+                                                                }
+                                                                
+                                                                .events .subscribe {
+                                                                    width: 100%;
+                                                                }
+                                                                
+                                                                .events .info .title {
+                                                                    text-align: center;
+                                                                    margin-top: 20px;
+                                                                    font-size: 26px;
+                                                                }
+                                                                
+                                                                .events .info .description {
+                                                                    text-align: center;
+                                                                    line-height: 1.7;
+                                                                    color: #777;
+                                                                }
+                                                                
+                                                                .events .subscribe {
+                                                                    margin-top: 50px;
+                                                                }
+                                                                
+                                                                .events .subscribe form {
+                                                                    width: 600px;
+                                                                    margin: 20px auto;
+                                                                    padding: 30px 40px;
+                                                                    background-color: #f6f5f5;
+                                                                    border-radius: 50px;
+                                                                    display: flex;
+                                                                    gap: 20px;
+                                                                }
+                                                                
+                                                                .events .subscribe form input[type="email"] {
+                                                                    flex: 1;
+                                                                    border: none;
+                                                                    border-radius: 50px;
+                                                                    padding: 20px;
+                                                                    caret-color: var(--main-color);
+                                                                }
+                                                                
+                                                                .events .subscribe form input[type="email"]:focus {
+                                                                    outline: none;
+                                                                }
+                                                                
+                                                                .events .subscribe form input[type="email"]::placeholder {
+                                                                    transition: opacity var(--main-transition);
+                                                                }
+                                                                
+                                                                .events .subscribe form input[type="email"]:focus::placeholder {
+                                                                    opacity: 0;
+                                                                }
+                                                                
+                                                                .events .subscribe form input[type="submit"] {
+                                                                    border-radius: 50px;
+                                                                    padding: 20px;
+                                                                    color: white;
+                                                                    background-color: var(--main-color);
+                                                                    font-weight: bold;
+                                                                    cursor: pointer;
+                                                                    border: none;
+                                                                }
+                                                                
+                                                                .pricing {
+                                                                    position: relative;
+                                                                    padding-top: var(--main-padding-top);
+                                                                    padding-bottom: var(--main-padding-bottom);
+                                                                    position: relative;
+                                                                    background-color: #ddd;
+                                                                }
+                                                                
+                                                                .pricing .container {
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: space-around;
+                                                                }
+                                                                
+                                                                .pricing .container .box {
+                                                                    background-color: white;
+                                                                    padding: 40px;
+                                                                    text-align: center;
+                                                                    margin: 20px;
+                                                                    position: relative;
+                                                                    z-index: 10;
+                                                                }
+                                                                
+                                                                .pricing .container .box::after {
+                                                                    z-index: -1;
+                                                                    bottom: 0;
+                                                                    left: 0;
+                                                                    content: "";
+                                                                    background-color: #eee;
+                                                                    height: 50%;
+                                                                    width: 0;
+                                                                    position: absolute;
+                                                                    transition: var(--main-transition);
+                                                                }
+                                                                
+                                                                .pricing .container .box::before {
+                                                                    z-index: -1;
+                                                                    top: 0;
+                                                                    right: 0;
+                                                                    content: "";
+                                                                    background-color: #eee;
+                                                                    height: 50%;
+                                                                    width: 0;
+                                                                    position: absolute;
+                                                                    transition: var(--main-transition);
+                                                                }
+                                                                
+                                                                .pricing .container .box:hover:before {
+                                                                    width: 100%;
+                                                                }
+                                                                
+                                                                .pricing .container .box:hover::after {
+                                                                    width: 100%;
+                                                                }
+                                                                
+                                                                .pricing .container .box .title {
+                                                                    padding: 10px;
+                                                                    font-weight: bold;
+                                                                    font-size: 26px;
+                                                                }
+                                                                
+                                                                .pricing .container .box img {
+                                                                    max-width: 80%;
+                                                                    padding: 20px 20px 0px 20px;
+                                                                }
+                                                                
+                                                                .pricing .container .box .price {
+                                                                    flex-direction: column;
+                                                                    display: flex;
+                                                                    font-size: 15px;
+                                                                    color: #777;
+                                                                }
+                                                                
+                                                                .pricing .container .box .price .amount {
+                                                                    font-size: 40px;
+                                                                    color: var(--main-color);
+                                                                    font-weight: bold;
+                                                                }
+                                                                
+                                                                .pricing .container .box a {
+                                                                    display: flex;
+                                                                    border: 3px solid var(--main-color);
+                                                                    height: 51px;
+                                                                    width: 120px;
+                                                                    align-items: center;
+                                                                    justify-content: center;
+                                                                    margin: 20px auto;
+                                                                    color: var(--main-color);
+                                                                    border-radius: 6px;
+                                                                    transition: var(--main-transition);
+                                                                    font-weight: bold;
+                                                                }
+                                                                
+                                                                .pricing .container .box a:hover {
+                                                                    color: white;
+                                                                    background-color: var(--main-color);
+                                                                }
+                                                                
+                                                                .pricing .container .box .price .time {}
+                                                                
+                                                                .pricing .container .box ul {
+                                                                    display: block;
+                                                                    padding: 10px 0px;
+                                                                }
+                                                                
+                                                                .pricing .container .box ul li {
+                                                                    padding: 20px;
+                                                                    border: 1px solid gray;
+                                                                    border-color: #eee transparent transparent transparent;
+                                                                }
+                                                                
+                                                                .videos {
+                                                                    padding-top: var(--main-padding-top);
+                                                                    padding-bottom: var(--main-padding-bottom);
+                                                                }
+                                                                
+                                                                .videos .holder {
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: space-between;
+                                                                    flex-direction: row;
+                                                                    background-color: #eee;
+                                                                }
+                                                                
+                                                                .videos .holder .preview {
+                                                                    background-color: #e2e2e2;
+                                                                    padding: 10px;
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    justify-content: space-between;
+                                                                }
+                                                                
+                                                                .videos .holder .preview img {
+                                                                    max-width: 100%;
+                                                                }
+                                                                
+                                                                .videos .holder .preview .info {
+                                                                    display: flex;
+                                                                    flex-direction: end;
+                                                                    background-color: whitesmoke;
+                                                                    padding: 20px;
+                                                                }
+                                                                
+                                                                .videos .holder .list {
+                                                                    min-width: 300px;
+                                                                }
+                                                                
+                                                                .videos .holder .list .name {
+                                                                    display: flex;
+                                                                    justify-content: space-between;
+                                                                    align-items: center;
+                                                                    flex-direction: row;
+                                                                    font-weight: bold;
+                                                                    background-color: #ececec;
+                                                                    padding: 20px;
+                                                                }
+                                                                
+                                                                .videos .holder .list ul {
+                                                                    background-color: white;
+                                                                    padding-top: 0;
+                                                                    height: 100%;
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    align-items: space-between;
+                                                                }
+                                                                
+                                                                .videos .holder .list ul li {
+                                                                    display: flex;
+                                                                    padding: 20px;
+                                                                    flex-direction: column;
+                                                                    border: 1px solid #ececec;
+                                                                    cursor: pointer;
+                                                                }
+                                                                
+                                                                .videos .holder .list ul li:hover {
+                                                                    background-color: #fafafa;
+                                                                    color: var(--main-color);
+                                                                }
+                                                                
+                                                                .videos .holder .list ul li span {
+                                                                    margin-top: 10px;
+                                                                    color: #777;
+                                                                }
+                                                                
+                                                                .stats {
+                                                                    padding-top: var(--main-padding-top);
+                                                                    padding-bottom: var(--main-padding-bottom);
+                                                                    position: relative;
+                                                                    background-color: #ececec;
+                                                                    min-height: 300px;
+                                                                    z-index: -2;
+                                                                }
+                                                                
+                                                                .stats h2 {
+                                                                    font-weight: bold;
+                                                                    font-size: 40px;
+                                                                    margin: 0 auto 50px;
+                                                                    text-align: center;
+                                                                }
+                                                                
+                                                                .stats .container {
+                                                                    display: flex;
+                                                                    flex-direction: row;
+                                                                    align-items: center;
+                                                                    justify-content: space-between;
+                                                                }
+                                                                
+                                                                .stats .container .box {
+                                                                    display: flex;
+                                                                    height: 175px;
+                                                                    flex-direction: column;
+                                                                    background-color: whitesmoke;
+                                                                    width: 23%;
+                                                                    text-align: center;
+                                                                    border-radius: 6px;
+                                                                }
+                                                                
+                                                                .stats .container .box::before,
+                                                                .stats .container .box::after {
+                                                                    content: "";
+                                                                    background-color: var(--main-color);
+                                                                    height: 2px;
+                                                                    width: 6px;
+                                                                    position: absolute;
+                                                                }
+                                                                
+                                                                .stats .container .box::before {
+                                                                    left: 0px;
+                                                                    top: 0px;
+                                                                }
+                                                                
+                                                                .stats .container .box::after {
+                                                                    right: 0px;
+                                                                    bottom: 0px;
+                                                                }
+                                                                
+                                                                .stats .container .box i {
+                                                                    display: block;
+                                                                    margin: 20px auto 0px;
+                                                                }
+                                                                
+                                                                .stats .container .box .number {
+                                                                    font-size: 40px;
+                                                                    font-weight: bold;
+                                                                }
+                                                                
+                                                                .stats .container .box .text {
+                                                                    font-size: 28px;
+                                                                    font-weight: bold;
+                                                                    margin-top: -15px;
+                                                                    color: var(--main-color);
+                                                                }
+                                                                
+                                                                .discount {
+                                                                    min-height: 100vh;
+                                                                    display: flex;
+                                                                    flex-wrap: wrap;
+                                                                }
+                                                                
+                                                                .discount .image {
+                                                                    display: flex;
+                                                                    flex-basis: 50%;
+                                                                    background-color: var(--main-color);
+                                                                    padding: 20px auto 40px;
+                                                                    justify-content: center;
+                                                                    padding: 20px;
+                                                                    padding-top: 120px;
+                                                                }
+                                                                
+                                                                .discount .image .content {
+                                                                    text-align: center;
+                                                                }
+                                                                
+                                                                .discount .image .content h2 {
+                                                                    color: white;
+                                                                    font-size: 26px;
+                                                                    font-weight: bold;
+                                                                }
+                                                                
+                                                                .discount .image .content p {
+                                                                    text-align: center;
+                                                                    max-width: 500px;
+                                                                    color: white;
+                                                                }
+                                                                
+                                                                .discount .image .content img {
+                                                                    max-width: 40%;
+                                                                }
+                                                                
+                                                                .discount .form {
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                    justify-content: center;
+                                                                    flex-basis: 50%;
+                                                                    padding-bottom: 50px;
+                                                                }
+                                                                
+                                                                .discount form .content {
+                                                                    padding: 20px auto;
+                                                                }
+                                                                
+                                                                .discount .form .input {
+                                                                    display: block;
+                                                                    width: 100%;
+                                                                    margin-bottom: 25px;
+                                                                    padding: 15px;
+                                                                    border: none;
+                                                                    border-bottom: 1px solid #ccc;
+                                                                    background-color: #f9f9f9;
+                                                                    caret-color: var(--main-color);
+                                                                }
+                                                                
+                                                                .discount .form textarea.input {
+                                                                    resize: none;
+                                                                    height: 200px;
+                                                                }
+                                                                
+                                                                .discount .form .input:focus {
+                                                                    outline: none;
+                                                                }
+                                                                
+                                                                .discount .form [type="submit"] {
+                                                                    display: block;
+                                                                    width: 100%;
+                                                                    padding: 15px;
+                                                                    background-color: var(--main-color);
+                                                                    color: white;
+                                                                    font-weight: bold;
+                                                                    font-size: 20px;
+                                                                    border: none;
+                                                                    cursor: pointer;
+                                                                    transition: var(--main-transition);
+                                                                }
+                                                                
+                                                                .discount .content h2 {
+                                                                    font-size: 40px;
+                                                                    letter-spacing: -2px;
+                                                                }
+                                                                
+                                                                .discount .content p {
+                                                                    line-height: 1.6;
+                                                                    font-size: 18px;
+                                                                    max-width: 500px;
+                                                                }
+                                                                
+                                                                .discount .content img {
+                                                                    width: 300px;
+                                                                    max-width: 100%;
+                                                                }
+                                                                
+                                                                .footer {
+                                                                    padding-top: var(--main-padding-top);
+                                                                    padding-bottom: var(--main-padding-bottom);
+                                                                    position: relative;
+                                                                    background-color: #191919;
+                                                                }
+                                                                
+                                                                .footer .container {
+                                                                    display: grid;
+                                                                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                                                                    gap: 40px;
+                                                                }
+                                                                
+                                                                .footer .container .box h3 {
+                                                                    font-size: 40px;
+                                                                    font-weight: bold;
+                                                                    color: white;
+                                                                    margin-bottom: -5px;
+                                                                }
+                                                                
+                                                                .footer .container .box .social {
+                                                                    display: flex;
+                                                                    flex-direction: row;
+                                                                    align-items: center;
+                                                                }
+                                                                
+                                                                .footer .container .box .social li {
+                                                                    margin-right: 10px;
+                                                                }
+                                                                
+                                                                .footer .container .box .social li a {
+                                                                    background-color: #313131;
+                                                                    padding: 20px;
+                                                                    width: 50px;
+                                                                    height: 50px;
+                                                                    display: inline-flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                    font-size: 25px;
+                                                                    color: #b9b9b9;
+                                                                    transition: var(--main-transition);
+                                                                }
+                                                                
+                                                                .footer .box .social .facebook:hover {
+                                                                    background-color: #1877f2;
+                                                                    color: white;
+                                                                }
+                                                                
+                                                                .footer .box .social .twitter:hover {
+                                                                    background-color: #1da1f2;
+                                                                    color: white;
+                                                                }
+                                                                
+                                                                .footer .box .social .youtube:hover {
+                                                                    background-color: #ff0000;
+                                                                    color: white;
+                                                                }
+                                                                
+                                                                .footer .container .box .text {
+                                                                    line-height: 2;
+                                                                    font-size: 16px;
+                                                                    color: #b9b9b9;
+                                                                }
+                                                                
+                                                                .footer .conatainer .box {
+                                                                    position: relative;
+                                                                }
+                                                                
+                                                                .footer .box .links li {
+                                                                    padding: 15px 0;
+                                                                }
+                                                                
+                                                                .footer .box .links li a:hover {
+                                                                    margin-left: 20px;
+                                                                    color: white;
+                                                                }
+                                                                
+                                                                .footer .box .links li a {
+                                                                    color: #ddd;
+                                                                    transition: var(--main-transition);
+                                                                }
+                                                                
+                                                                .footer .box .links li:not(:last-child) {
+                                                                    border-bottom: 1px solid #444;
+                                                                }
+                                                                
+                                                                .footer .box .line {
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                    color: #b9b9b9;
+                                                                    margin-bottom: 30px;
+                                                                    justify-content: space-between;
+                                                                }
+                                                                
+                                                                .footer .box .line i {
+                                                                    padding-right: 50px;
+                                                                    color: var(--main-color);
+                                                                    font-size: 23px;
+                                                                }
+                                                                
+                                                                .footer .box .footer-gallery {
+                                                                    display: flex;
+                                                                    gap: 10px;
+                                                                }
+                                                                
+                                                                .footer .footer-gallery img {
+                                                                    max-width: 32%;
+                                                                    border: 2px solid white;
+                                                                    height: 70px;
+                                                                    width: 70px;
+                                                                    margin-right: 6px;
+                                                                }
+                                                                
+                                                                .footer .copyright {
+                                                                    padding: 25px 0;
+                                                                    text-align: center;
+                                                                    color: white;
+                                                                    margin: 50px 0 0;
+                                                                    border-top: 1px solid #444;
+                                                                }

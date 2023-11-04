@@ -1,0 +1,133 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border: 5px solid blue;
+    animation-name: change-color;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    /*l animation chhal ntab9oha mn 5atra*/
+    animation-timing-function: ease;
+    /*l ritm yli ymchi bich animations*/
+    animation-direction: reverse;
+    animation-direction: alternate;
+    /* m3a lwl ymchi 3adi
+    l animation tmchi bel 3akss mn 100% ll 0%*/
+    /*alternate ymchi ll 9dam w ywali ll lor*/
+    animation-delay: 2s;
+    /*nstna 2s bach tbda animation*/
+    animation-fill-mode: forwards;
+    /*l div ydi a style ta3o mn la situation l5ra 
+    ta3 animation tsma chof mn taht y93od rotat 90
+    wl (backword) ydi lwl 3akss forwards
+    */
+    animation-play-state: running;
+    /*ida raho yemchi animation wla lala*/
+    animation: 7s;
+    /*short hand*/
+    /* name time cont function direction*/
+}
+
+@keyframes change-color {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90%);
+    }
+}
+
+div:hover {
+    /*ki tdir hover ll elm yhabss l animation*/
+    animation-play-state: paused;
+}
+
+
+/*CSS SELECTORS*/
+
+
+/*
+* hadi t5ayr kaml les elm yli kayn fl la page
+div p => ma3naha ga3 les p yli kayn da5l div
+
+.class name
+.class name1.classname2 => ma3naha div fih deux class 
+f nafss lw9t
+
+ p.classname => y9iss lp yli mditlo class name
+ tsma lokan tmd class name l div may9issoch
+
+ parent > .chid => direct child 
+yhawss 3la child yli yji tahto direct
+
+elm + others elm => div + p
+nhawsso 3la div yli morah p direct
+
+elm ~ other elm => p wga3 les div yli yjo m3ah f
+nafss paragraph ydi 5awto
+
+elm attribute[yji hna]
+
+elm[ attribute="claaas" ]
+tdir elm 3ando title class f child wla attribute wahdha
+attribute ma3naha type
+
+[ attribute ~ ="claaas" ]=> meme idees l9oaniya 
+mais f hadi f title ki tkon kelma wahda y selectioniha
+w lazm  tkon kelma wahda
+
+[ attribute * ="claaas" ] kifkif mais hna t9dr tkon kelma
+brk tkfi mam tkon lass9a
+
+[ attribute ^ ="claaas" ] kifkif koul attribute 3ando
+had name y selectionih mais hna lazm ykon ybda bih
+*/
+
+
+/*
+p:first-child 
+p lwl f div
+
+p:last-child
+p l5r f div
+
+p:first-of-type => lwl mn no3o
+
+p:last-of-type => la5r
+
+p:only-child => ykon p wahdo
+
+p:only-of-type => lwahid mn no3o
+
+:not(selector) => klch ma3da yli rak dayro f not
+
+p:nth-child(2) => t9iss 2nd p f div
+
+p:nth-last-child( )=>tbda thssab mn l elm la5r w tli tal3
+
+p:nth-of-type(3) => etalt f no33o
+
+p:nth-last-of-type(2)=> kifkif mn la5r
+
+:checked + label => label yli tji moraha tkon hmra
+
+div:empty => t selectioner div vid
+
+input:disabled => f input
+
+input:required + span => span yli yji mor required f input
+
+div ::selection => tselectioner koulma tdir selection ll div 
+
+::placeholder => koul placholder t selectionih
+
+
+
+*/
